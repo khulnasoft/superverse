@@ -1,14 +1,4 @@
-<div align="center">
-  <p>
-    <a align="center" href="" target="https://metavision.khulnasoft.com">
-      <img
-        width="100%"
-        src="https://media.khulnasoft.com/open-source/metavision/rf-metavision-banner.png?updatedAt=1678995927529"
-      >
-    </a>
-  </p>
-
-<br>
+# MetaVision
 
 [notebooks](https://github.com/khulnasoft/notebooks) | [inference](https://github.com/khulnasoft/inference) | [autodistill](https://github.com/autodistill/autodistill) | [maestro](https://github.com/khulnasoft/multimodal-maestro)
 
@@ -23,10 +13,6 @@
 [![gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Khulnasoft/Annotators)
 [![discord](https://img.shields.io/discord/1159501506232451173?logo=discord&label=discord&labelColor=fff&color=5865f2&link=https%3A%2F%2Fdiscord.gg%2FGbfgXGJ8Bk)](https://discord.gg/GbfgXGJ8Bk)
 [![built-with-material-for-mkdocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
-
-  <div align="center">
-    <a href="https://trendshift.io/repositories/124"  target="_blank"><img src="https://trendshift.io/api/badge/repositories/124" alt="khulnasoft%2Fmetavision | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-  </div>
 
 </div>
 
@@ -70,8 +56,6 @@ len(detections)
 
 - inference
 
-  Running with [Inference](https://github.com/khulnasoft/inference) requires a [Khulnasoft API KEY](https://docs.khulnasoft.com/api-reference/authentication#retrieve-an-api-key).
-
   ```python
   import cv2
   import metavision as sv
@@ -90,8 +74,6 @@ len(detections)
 
 ### annotators
 
-Metavision offers a wide range of highly customizable [annotators](https://metavision.khulnasoft.com/latest/detection/annotators/), allowing you to compose the perfect visualization for your use case.
-
 ```python
 import cv2
 import metavision as sv
@@ -105,11 +87,7 @@ annotated_frame = box_annotator.annotate(
   detections=detections)
 ```
 
-https://github.com/khulnasoft/metavision/assets/26109316/691e219c-0565-4403-9218-ab5644f39bce
-
 ### datasets
-
-Metavision provides a set of [utils](https://metavision.khulnasoft.com/latest/datasets/core/) that allow you to load, split, merge, and save datasets in one of the supported formats.
 
 ```python
 import metavision as sv
@@ -220,25 +198,7 @@ for path, image, annotation in ds:
 
 </details>
 
-## 🎬 tutorials
-
-Want to learn how to use Metavision? Explore our [how-to guides](https://metavision.khulnasoft.com/develop/how_to/detect_and_annotate/), [end-to-end examples](https://github.com/khulnasoft/metavision/tree/develop/examples), [cheatsheet](https://khulnasoft.github.io/cheatsheet-metavision/), and [cookbooks](https://metavision.khulnasoft.com/develop/cookbooks/)!
-
 <br/>
-
-<p align="left">
-<a href="https://youtu.be/hAWpsIuem10" title="Dwell Time Analysis with Computer Vision | Real-Time Stream Processing"><img src="https://github.com/SkalskiP/SkalskiP/assets/26109316/a742823d-c158-407d-b30f-063a5d11b4e1" alt="Dwell Time Analysis with Computer Vision | Real-Time Stream Processing" width="300px" align="left" /></a>
-<a href="https://youtu.be/hAWpsIuem10" title="Dwell Time Analysis with Computer Vision | Real-Time Stream Processing"><strong>Dwell Time Analysis with Computer Vision | Real-Time Stream Processing</strong></a>
-<div><strong>Created: 5 Apr 2024</strong></div>
-<br/>Learn how to use computer vision to analyze wait times and optimize processes. This tutorial covers object detection, tracking, and calculating time spent in designated zones. Use these techniques to improve customer experience in retail, traffic management, or other scenarios.</p>
-
-<br/>
-
-<p align="left">
-<a href="https://youtu.be/uWP6UjDeZvY" title="Speed Estimation & Vehicle Tracking | Computer Vision | Open Source"><img src="https://github.com/SkalskiP/SkalskiP/assets/26109316/61a444c8-b135-48ce-b979-2a5ab47c5a91" alt="Speed Estimation & Vehicle Tracking | Computer Vision | Open Source" width="300px" align="left" /></a>
-<a href="https://youtu.be/uWP6UjDeZvY" title="Speed Estimation & Vehicle Tracking | Computer Vision | Open Source"><strong>Speed Estimation & Vehicle Tracking | Computer Vision | Open Source</strong></a>
-<div><strong>Created: 11 Jan 2024</strong></div>
-<br/>Learn how to track and estimate the speed of vehicles using YOLO, ByteTrack, and Khulnasoft Inference. This comprehensive tutorial covers object detection, multi-object tracking, filtering detections, perspective transformation, speed estimation, visualization improvements, and more.</p>
 
 ## 💜 built with metavision
 
@@ -263,52 +223,3 @@ We love your input! Please see our [contributing guide](https://github.com/khuln
       <img src="https://contrib.rocks/image?repo=khulnasoft/metavision" />
     </a>
 </p>
-
-<br>
-
-<div align="center">
-
-<div align="center">
-      <a href="https://youtube.com/khulnasoft">
-          <img
-            src="https://media.khulnasoft.com/notebooks/template/icons/purple/youtube.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672949634652"
-            width="3%"
-          />
-      </a>
-      <img src="https://raw.githubusercontent.com/ultralytics/assets/main/social/logo-transparent.png" width="3%"/>
-      <a href="https://khulnasoft.com">
-          <img
-            src="https://media.khulnasoft.com/notebooks/template/icons/purple/khulnasoft-app.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672949746649"
-            width="3%"
-          />
-      </a>
-      <img src="https://raw.githubusercontent.com/ultralytics/assets/main/social/logo-transparent.png" width="3%"/>
-      <a href="https://www.linkedin.com/company/khulnasoft-ai/">
-          <img
-            src="https://media.khulnasoft.com/notebooks/template/icons/purple/linkedin.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672949633691"
-            width="3%"
-          />
-      </a>
-      <img src="https://raw.githubusercontent.com/ultralytics/assets/main/social/logo-transparent.png" width="3%"/>
-      <a href="https://docs.khulnasoft.com">
-          <img
-            src="https://media.khulnasoft.com/notebooks/template/icons/purple/knowledge.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672949634511"
-            width="3%"
-          />
-      </a>
-      <img src="https://raw.githubusercontent.com/ultralytics/assets/main/social/logo-transparent.png" width="3%"/>
-      <a href="https://discuss.khulnasoft.com">
-          <img
-            src="https://media.khulnasoft.com/notebooks/template/icons/purple/forum.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672949633584"
-            width="3%"
-          />
-      <img src="https://raw.githubusercontent.com/ultralytics/assets/main/social/logo-transparent.png" width="3%"/>
-      <a href="https://blog.khulnasoft.com">
-          <img
-            src="https://media.khulnasoft.com/notebooks/template/icons/purple/blog.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672949633605"
-            width="3%"
-          />
-      </a>
-      </a>
-  </div>
-</div>
