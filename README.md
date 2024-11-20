@@ -200,16 +200,6 @@ for path, image, annotation in ds:
 
 <br/>
 
-## 💜 built with metavision
-
-Did you build something cool using metavision? [Let us know!](https://github.com/khulnasoft/metavision/discussions/categories/built-with-metavision)
-
-https://user-images.githubusercontent.com/26109316/207858600-ee862b22-0353-440b-ad85-caa0c4777904.mp4
-
-https://github.com/khulnasoft/metavision/assets/26109316/c9436828-9fbf-4c25-ae8c-60e9c81b3900
-
-https://github.com/khulnasoft/metavision/assets/26109316/3ac6982f-4943-4108-9b7f-51787ef1a69f
-
 ## 📚 documentation
 
 Visit our [documentation](https://khulnasoft.github.io/metavision) page to learn how metavision can help you build computer vision applications faster and more reliably.
