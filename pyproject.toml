@@ -1,315 +1,270 @@
-[build-system]
-requires = ["flit_core >=2,<4"]
-build-backend = "flit_core.buildapi"
-
-[project]
-name =  "py-project-toml"
-authors = [
-    {name = "KhulnaSoft DevOps", email = "info@khulnasoft.com"},
+[tool.poetry]
+name = "metavision"
+version = "0.26.0rc1"
+description = "A set of easy-to-use utils that will come in handy in any Computer Vision project"
+authors = ["Piotr Skalski <piotr.skalski92@gmail.com>"]
+maintainers = [
+    "Piotr Skalski <piotr.skalski92@gmail.com>",
+    "Linas Kondrackis <linas@khulnasoft.com>",
 ]
-description = "Sample Python Project for creating a new Python Module"
 readme = "README.md"
+license = "MIT"
+packages = [{ include = "metavision" }, { include = "metavision/py.typed" }]
+homepage = "https://github.com/khulnasoft/metavision"
+repository = "https://github.com/khulnasoft/metavision"
+documentation = "https://metavision.khulnasoft.com/latest/"
+keywords = [
+    "machine-learning",
+    "deep-learning",
+    "vision",
+    "ML",
+    "DL",
+    "AI",
+    "Khulnasoft",
+]
+
 classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11"
-]
-requires-python = ">=3.8.1"
-dynamic = ["version"]
-
-[project.optional-dependencies]
-spark = [
-    "pyspark>=3.0.0"
-]
-test = [
-    "bandit[toml]==1.7.9",
-    "black==24.4.2",
-    "check-manifest==0.49",
-    "flake8-bugbear==24.4.26",
-    "flake8-docstrings",
-    "flake8-formatter_junit_xml",
-    "flake8",
-    "flake8-pyproject",
-    "pre-commit==3.7.1",
-    "pylint==3.2.6",
-    "pylint_junit",
-    "pytest-cov==5.0.0",
-    "pytest-mock<3.14.1",
-    "pytest-runner",
-    "pytest==8.2.2",
-    "pytest-github-actions-annotate-failures",
-    "shellcheck-py==0.10.0.1"
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Topic :: Software Development',
+    'Topic :: Scientific/Engineering',
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    'Typing :: Typed',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: MacOS',
 ]
 
-[project.urls]
-Documentation = "https://github.com/khulnasoft/python-repo-template/tree/main#readme"
-Source = "https://github.com/khulnasoft/python-repo-template"
-Tracker = "https://github.com/khulnasoft/python-repo-template/issues"
+[tool.poetry.dependencies]
+python = "^3.8"
 
-[tool.flit.module]
-name = "python_package"
+# For Python versions 3.13 and above, use numpy versions 2.1.0,
+# required for poetry to not fail.
+numpy = [
+    { version = ">=1.21.2", python = "<3.13" },
+    { version = ">=2.1.0", python = ">=3.13" },
+]
+
+scipy = [
+    { version = "1.10.0", python = "<3.9" },
+    { version = "^1.10.0", python = ">=3.9" },
+    { version = ">=1.14.1", python = ">=3.13" },
+
+]
+
+# Matplotlib sub-dependency
+# The 'contourpy' package is required by Matplotlib for contour plotting.
+# We need to ensure compatibility with both Python 3.8 and Python 3.13.
+#
+# For Python 3.8 and above, we use version 1.0.7 or higher, as it is the lowest major version that supports Python 3.8.
+# For Python 3.13 and above, we use version 1.3.0 or higher, as it is the first version that explicitly supports Python 3.13.
+contourpy = [
+    { version = ">=1.0.7", python = ">=3.8,<3.13" },
+    { version = ">=1.3.0", python = ">=3.13" },
+]
+
+matplotlib = ">=3.6.0"
+pyyaml = ">=5.3"
+defusedxml = "^0.7.1"
+pillow = ">=9.4"
+requests = ">=2.26.0"
+tqdm = ">=4.62.3"
+# pandas: picked lowest major version that supports Python 3.8
+pandas = { version = ">=2.0.0", optional = true }
+opencv-python = ">=4.5.5.64"
+
+[tool.poetry.extras]
+metrics = ["pandas"]
+
+[tool.poetry.group.dev.dependencies]
+twine = "^5.1.1"
+pytest = ">=7.2.2,<9.0.0"
+wheel = ">=0.40,<0.46"
+build = ">=0.10,<1.3"
+ruff = ">=0.1.0"
+mypy = "^1.4.1"
+pre-commit = "^3.3.3"
+tox = "^4.11.4"
+notebook = ">=6.5.3,<8.0.0"
+ipywidgets = "^8.1.1"
+jupytext = "^1.16.1"
+nbconvert = "^7.14.2"
+docutils = [
+    { version = "^0.20.1", python = "<3.9" },
+    { version = "^0.21.1", python = ">=3.9" },
+]
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = { extras = ["imaging"], version = "^9.5.5" }
+mkdocstrings = ">=0.25.2,<0.27.0"
+mkdocstrings-python = "^1.10.9"
+mike = "^2.0.0"
+# For Documentation Development use Python 3.10 or above
+# Use Latest mkdocs-jupyter min 0.24.6 for Jupyter Notebook Theme support
+mkdocs-jupyter = "^0.24.3"
+mkdocs-git-committers-plugin-2 = "^2.4.1"
+mkdocs-git-revision-date-localized-plugin = "^1.2.4"
+
+[tool.poetry.group.typecheck]
+optional = true
+
+[tool.poetry.group.typecheck.dependencies]
+types-pyyaml = "^6.0.12.20240808"
+types-cffi = "^1.16.0.20240331"
+types-requests = "^2.32.0.20240712"
+types-tqdm = "^4.66.0.20240417"
+pandas-stubs = ">=2.0.0.230412"
+
 
 [tool.bandit]
-exclude_dirs = ["build","dist","tests","scripts"]
-number = 4
-recursive = true
-targets = "src"
+target = ["test", "metavision"]
+tests = ["B201", "B301", "B318", "B314", "B303", "B413", "B412", "B410"]
 
-[tool.black]
-line-length = 120
-fast = true
+[tool.autoflake]
+check = true
+imports = ["cv2", "metavision"]
 
-[tool.coverage.run]
-branch = true
 
-[tool.coverage.report]
-fail_under = 100
+[tool.ruff]
+target-version = "py38"
 
-[tool.flake8]
-max-line-length = 120
-select = "F,E,W,B,B901,B902,B903"
+# Exclude a variety of commonly ignored directories.
 exclude = [
+    ".bzr",
+    ".direnv",
     ".eggs",
     ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
     ".tox",
-    "nssm",
-    "obj",
-    "out",
-    "packages",
-    "pywin32",
-    "tests",
-    "swagger_client"
-]
-ignore = [
-    "E722",
-    "B001",
-    "W503",
-    "E203"
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "yarn-error.log",
+    "yarn.lock",
+    "docs",
 ]
 
-[tool.pyright]
-include = ["src"]
-exclude = [
-    "**/node_modules",
-    "**/__pycache__",
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+# Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
+select = ["E", "F", "I", "A", "Q", "W", "RUF"]
+ignore = []
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "N",
+    "Q",
+    "S",
+    "T",
+    "W",
+    "ANN",
+    "ARG",
+    "BLE",
+    "COM",
+    "DJ",
+    "DTZ",
+    "EM",
+    "ERA",
+    "EXE",
+    "FBT",
+    "ICN",
+    "INP",
+    "ISC",
+    "NPY",
+    "PD",
+    "PGH",
+    "PIE",
+    "PL",
+    "PT",
+    "PTH",
+    "PYI",
+    "RET",
+    "RSE",
+    "RUF",
+    "SIM",
+    "SLF",
+    "TCH",
+    "TID",
+    "TRY",
+    "UP",
+    "YTT",
 ]
-venv = "env37"
+unfixable = []
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+pylint.max-args = 20
 
-reportMissingImports = true
-reportMissingTypeStubs = false
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "double"
+multiline-quotes = "double"
+docstring-quotes = "double"
 
-pythonVersion = "3.7"
-pythonPlatform = "Linux"
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
-executionEnvironments = [
-  { root = "src" }
-]
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402", "F401"]
 
-[tool.pytest.ini_options]
-addopts = "--cov-report xml:coverage.xml --cov src --cov-fail-under 0 --cov-append -m 'not integration'"
-pythonpath = [
-  "src"
-]
-testpaths = "tests"
-junit_family = "xunit2"
-markers = [
-    "integration: marks as integration test",
-    "notebooks: marks as notebook test",
-    "gpu: marks as gpu test",
-    "spark: marks tests which need Spark",
-    "slow: marks tests as slow",
-    "unit: fast offline tests",
-]
+[tool.ruff.lint.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 5.
+max-complexity = 20
 
-[tool.tox]
-legacy_tox_ini = """
-[tox]
-envlist = py, integration, spark, all
+[tool.ruff.lint.isort]
+order-by-type = true
+no-sections = false
 
-[testenv]
-commands =
-    pytest -m "not integration and not spark" {posargs}
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
 
-[testenv:integration]
-commands =
-    pytest -m "integration" {posargs}
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
 
-[testenv:spark]
-extras = spark
-setenv =
-       PYSPARK_DRIVER_PYTHON = {envpython}
-       PYSPARK_PYTHON = {envpython}
-commands =
-    pytest -m "spark" {posargs}
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
 
-[testenv:all]
-extras = all
-setenv =
-       PYSPARK_DRIVER_PYTHON = {envpython}
-       PYSPARK_PYTHON = {envpython}
-commands =
-    pytest {posargs}
-"""
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
 
-[tool.pylint]
-extension-pkg-whitelist= [
-    "numpy",
-    "torch",
-    "cv2",
-    "pyodbc",
-    "pydantic",
-    "ciso8601",
-    "netcdf4",
-    "scipy"
-]
-ignore="CVS"
-ignore-patterns="test.*?py,conftest.py"
-init-hook='import sys; sys.setrecursionlimit(8 * sys.getrecursionlimit())'
-jobs=0
-limit-inference-results=100
-persistent="yes"
-suggestion-mode="yes"
-unsafe-load-any-extension="no"
+[tool.codespell]
+skip = "*.ipynb,poetry.lock"
+count = true
+quiet-level = 3
+ignore-words-list = "STrack,sTrack,strack"
 
-[tool.pylint.'MESSAGES CONTROL']
-enable="c-extension-no-member"
+[tool.setuptools]
+include-package-data = false
 
-[tool.pylint.'REPORTS']
-evaluation="10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)"
-output-format="text"
-reports="no"
-score="yes"
+[tool.setuptools.packages.find]
+exclude = ["docs*", "test*", "examples*"]
 
-[tool.pylint.'REFACTORING']
-max-nested-blocks=5
-never-returning-functions="sys.exit"
-
-[tool.pylint.'BASIC']
-argument-naming-style="snake_case"
-attr-naming-style="snake_case"
-bad-names= [
-    "foo",
-    "bar"
-]
-class-attribute-naming-style="any"
-class-naming-style="PascalCase"
-const-naming-style="UPPER_CASE"
-docstring-min-length=-1
-function-naming-style="snake_case"
-good-names= [
-    "i",
-    "j",
-    "k",
-    "ex",
-    "Run",
-    "_"
-]
-include-naming-hint="yes"
-inlinevar-naming-style="any"
-method-naming-style="snake_case"
-module-naming-style="any"
-no-docstring-rgx="^_"
-property-classes="abc.abstractproperty"
-variable-naming-style="snake_case"
-
-[tool.pylint.'FORMAT']
-ignore-long-lines="^\\s*(# )?.*['\"]?<?https?://\\S+>?"
-indent-after-paren=4
-indent-string='    '
-max-line-length=120
-max-module-lines=1000
-single-line-class-stmt="no"
-single-line-if-stmt="no"
-
-[tool.pylint.'LOGGING']
-logging-format-style="old"
-logging-modules="logging"
-
-[tool.pylint.'MISCELLANEOUS']
-notes= [
-    "FIXME",
-    "XXX",
-    "TODO"
-]
-
-[tool.pylint.'SIMILARITIES']
-ignore-comments="yes"
-ignore-docstrings="yes"
-ignore-imports="yes"
-min-similarity-lines=7
-
-[tool.pylint.'SPELLING']
-max-spelling-suggestions=4
-spelling-store-unknown-words="no"
-
-[tool.pylint.'STRING']
-check-str-concat-over-line-jumps="no"
-
-[tool.pylint.'TYPECHECK']
-contextmanager-decorators="contextlib.contextmanager"
-generated-members="numpy.*,np.*,pyspark.sql.functions,collect_list"
-ignore-mixin-members="yes"
-ignore-none="yes"
-ignore-on-opaque-inference="yes"
-ignored-classes="optparse.Values,thread._local,_thread._local,numpy,torch,swagger_client"
-ignored-modules="numpy,torch,swagger_client,netCDF4,scipy"
-missing-member-hint="yes"
-missing-member-hint-distance=1
-missing-member-max-choices=1
-
-[tool.pylint.'VARIABLES']
-additional-builtins="dbutils"
-allow-global-unused-variables="yes"
-callbacks= [
-    "cb_",
-    "_cb"
-]
-dummy-variables-rgx="_+$|(_[a-zA-Z0-9_]*[a-zA-Z0-9]+?$)|dummy|^ignored_|^unused_"
-ignored-argument-names="_.*|^ignored_|^unused_"
-init-import="no"
-redefining-builtins-modules="six.moves,past.builtins,future.builtins,builtins,io"
-
-[tool.pylint.'CLASSES']
-defining-attr-methods= [
-    "__init__",
-    "__new__",
-    "setUp",
-    "__post_init__"
-]
-exclude-protected= [
-    "_asdict",
-    "_fields",
-    "_replace",
-    "_source",
-    "_make"
-]
-valid-classmethod-first-arg="cls"
-valid-metaclass-classmethod-first-arg="cls"
-
-[tool.pylint.'DESIGN']
-max-args=5
-max-attributes=7
-max-bool-expr=5
-max-branches=12
-max-locals=15
-max-parents=7
-max-public-methods=20
-max-returns=6
-max-statements=50
-min-public-methods=2
-
-[tool.pylint.'IMPORTS']
-allow-wildcard-with-all="no"
-analyse-fallback-blocks="no"
-deprecated-modules="optparse,tkinter.tix"
-
-[tool.pylint.'EXCEPTIONS']
-overgeneral-exceptions= [
-    "BaseException",
-    "Exception"
-]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

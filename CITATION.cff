@@ -1,0 +1,23 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Metavision
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Khulnasoft
+    email: support@khulnasoft.com
+repository-code: "https://github.com/khulnasoft/metavision"
+url: "https://khulnasoft.github.io/metavision/"
+abstract: >-
+  metavision features a range of utilities for use in
+  computer vision projects, from detections processing and
+  filtering to confusion matrix calculation.
+keywords:
+  - computer vision
+  - image processing
+  - video processing
+license: MIT
