@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "superverse"
-version = "0.26.0rc1"
+version = "0.3.0"
 description = "A set of easy-to-use utils that will come in handy in any Computer Vision project"
 authors = ["Md Sulaiman <dev.sulaiman@icloud.com>"]
 maintainers = [
