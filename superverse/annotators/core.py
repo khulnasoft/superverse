@@ -373,9 +373,7 @@ class MaskAnnotator(BaseAnnotator):
             mask = detections.mask[detection_idx]
             colored_mask[mask] = color.as_bgr()
 
-        cv2.addWeighted(
-            colored_mask, self.opacity, scene, 1 - self.opacity, 0, dst=scene
-        )
+        cv2.addWeighted(colored_mask, self.opacity, scene, 1 - self.opacity, 0, dst=scene)
         return scene
 
 
@@ -1238,9 +1236,7 @@ class LabelAnnotator(BaseAnnotator):
         )
 
         color_lookup = (
-            custom_color_lookup
-            if custom_color_lookup is not None
-            else self.color_lookup
+            custom_color_lookup if custom_color_lookup is not None else self.color_lookup
         )
 
         for idx, label_property in enumerate(label_properties):
@@ -1511,9 +1507,7 @@ class RichLabelAnnotator(BaseAnnotator):
             "do not match."
         )
         color_lookup = (
-            custom_color_lookup
-            if custom_color_lookup is not None
-            else self.color_lookup
+            custom_color_lookup if custom_color_lookup is not None else self.color_lookup
         )
 
         for idx, label_property in enumerate(label_properties):

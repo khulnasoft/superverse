@@ -94,9 +94,7 @@ class VideoProcessor:
         self.zones_out = initiate_polygon_zones(ZONE_OUT_POLYGONS, [sv.Position.CENTER])
 
         self.box_annotator = sv.BoxAnnotator(color=COLORS)
-        self.label_annotator = sv.LabelAnnotator(
-            color=COLORS, text_color=sv.Color.BLACK
-        )
+        self.label_annotator = sv.LabelAnnotator(color=COLORS, text_color=sv.Color.BLACK)
         self.trace_annotator = sv.TraceAnnotator(
             color=COLORS, position=sv.Position.CENTER, trace_length=100, thickness=2
         )
@@ -120,9 +118,7 @@ class VideoProcessor:
                     break
             cv2.destroyAllWindows()
 
-    def annotate_frame(
-        self, frame: np.ndarray, detections: sv.Detections
-    ) -> np.ndarray:
+    def annotate_frame(self, frame: np.ndarray, detections: sv.Detections) -> np.ndarray:
         annotated_frame = frame.copy()
         for i, (zone_in, zone_out) in enumerate(zip(self.zones_in, self.zones_out)):
             annotated_frame = sv.draw_polygon(

@@ -166,9 +166,7 @@ class LineZone:
             else [None] * len(detections)
         )
 
-        for i, (class_id, tracker_id) in enumerate(
-            zip(class_ids, detections.tracker_id)
-        ):
+        for i, (class_id, tracker_id) in enumerate(zip(class_ids, detections.tracker_id)):
             if not in_limits[i]:
                 continue
 
@@ -498,12 +496,10 @@ class LineZoneAnnotator:
             anchor = list(end_point)
 
             move_along_x = int(
-                math.cos(math.radians(line_angle))
-                * (text_width / 2 + self.text_padding)
+                math.cos(math.radians(line_angle)) * (text_width / 2 + self.text_padding)
             )
             move_along_y = int(
-                math.sin(math.radians(line_angle))
-                * (text_width / 2 + self.text_padding)
+                math.sin(math.radians(line_angle)) * (text_width / 2 + self.text_padding)
             )
 
             anchor[0] -= move_along_x
@@ -830,9 +826,7 @@ class LineZoneAnnotatorMulticlass:
         }
         table_x1, table_y1 = position_map[self.table_position]
 
-        table_rect = Rect(
-            x=table_x1, y=table_y1, width=table_width, height=table_height
-        )
+        table_rect = Rect(x=table_x1, y=table_y1, width=table_width, height=table_height)
         frame = draw_rectangle(
             scene=frame, rect=table_rect, color=self.table_color, thickness=-1
         )

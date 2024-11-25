@@ -155,9 +155,7 @@ TEST_DET_DIFFERENT_METADATA = Detections(
         ),  # take only detections with confidence > 0.5
         (
             DETECTIONS,
-            np.array(
-                [True, True, True, True, True, True, True, True, True], dtype=bool
-            ),
+            np.array([True, True, True, True, True, True, True, True, True], dtype=bool),
             DETECTIONS,
             DoesNotRaise(),
         ),  # take all detections
@@ -217,9 +215,7 @@ TEST_DET_DIFFERENT_METADATA = Detections(
         (DETECTIONS, np.array([0, 2, 10]), None, pytest.raises(IndexError)),
         (
             DETECTIONS,
-            np.array(
-                [True, True, True, True, True, True, True, True, True, True, True]
-            ),
+            np.array([True, True, True, True, True, True, True, True, True, True, True]),
             None,
             pytest.raises(IndexError),
         ),

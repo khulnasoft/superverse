@@ -303,9 +303,7 @@ class DetectionDataset(BaseDataset):
         image_paths_unique = list(dict.fromkeys(image_paths))
         if len(image_paths) != len(image_paths_unique):
             duplicates = find_duplicates(image_paths)
-            raise ValueError(
-                f"Image paths {duplicates} are not unique across datasets."
-            )
+            raise ValueError(f"Image paths {duplicates} are not unique across datasets.")
         image_paths = image_paths_unique
 
         classes = merge_class_lists(
@@ -543,9 +541,7 @@ class DetectionDataset(BaseDataset):
                 Argument is used only for segmentation datasets.
         """
         if images_directory_path is not None:
-            save_dataset_images(
-                dataset=self, images_directory_path=images_directory_path
-            )
+            save_dataset_images(dataset=self, images_directory_path=images_directory_path)
         if annotations_directory_path is not None:
             save_yolo_annotations(
                 dataset=self,
@@ -652,9 +648,7 @@ class DetectionDataset(BaseDataset):
                 Argument is used only for segmentation datasets.
         """
         if images_directory_path is not None:
-            save_dataset_images(
-                dataset=self, images_directory_path=images_directory_path
-            )
+            save_dataset_images(dataset=self, images_directory_path=images_directory_path)
         if annotations_path is not None:
             save_coco_annotations(
                 dataset=self,

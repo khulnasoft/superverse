@@ -118,7 +118,7 @@ from superverse.detection.lmm import from_paligemma
             ),
         ),  # correct response; with classes
         (
-            "<loc0256><loc0256><loc0768><loc0768> cat ; <loc0256><loc0256><loc0768> cat",  # noqa: E501
+            "<loc0256><loc0256><loc0768><loc0768> cat ; <loc0256><loc0256><loc0768> cat",
             (1000, 1000),
             ["cat", "dog"],
             (

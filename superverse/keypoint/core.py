@@ -496,9 +496,7 @@ class KeyPoints:
             if detectron2_results["instances"].pred_keypoints.cpu().numpy().size == 0:
                 return cls.empty()
             return cls(
-                xy=detectron2_results["instances"]
-                .pred_keypoints.cpu()
-                .numpy()[:, :, :2],
+                xy=detectron2_results["instances"].pred_keypoints.cpu().numpy()[:, :, :2],
                 confidence=detectron2_results["instances"]
                 .pred_keypoints.cpu()
                 .numpy()[:, :, 2],

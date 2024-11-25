@@ -92,9 +92,7 @@ def from_paligemma(
 
 def from_florence_2(
     result: dict, resolution_wh: Tuple[int, int]
-) -> Tuple[
-    np.ndarray, Optional[np.ndarray], Optional[np.ndarray], Optional[np.ndarray]
-]:
+) -> Tuple[np.ndarray, Optional[np.ndarray], Optional[np.ndarray], Optional[np.ndarray]]:
     """
     Parse results from the Florence 2 multi-model model.
     https://huggingface.co/microsoft/Florence-2-large

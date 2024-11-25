@@ -33,9 +33,7 @@ from test.test_utils import mock_detections
                 DetectionDataset(classes=["dog", "person"], images=[], annotations={}),
                 DetectionDataset(classes=["cat"], images=[], annotations={}),
             ],
-            DetectionDataset(
-                classes=["cat", "dog", "person"], images=[], annotations={}
-            ),
+            DetectionDataset(classes=["cat", "dog", "person"], images=[], annotations={}),
             DoesNotRaise(),
         ),  # two datasets; no images and annotations, different classes
         (

@@ -116,8 +116,7 @@ def get_obb_size_category(xyxyxyxy: npt.NDArray[np.float32]) -> npt.NDArray[np.i
     x1, x2, x3, x4 = x.T
     y1, y2, y3, y4 = y.T
     areas = 0.5 * np.abs(
-        (x1 * y2 + x2 * y3 + x3 * y4 + x4 * y1)
-        - (x2 * y1 + x3 * y2 + x4 * y3 + x1 * y4)
+        (x1 * y2 + x2 * y3 + x3 * y4 + x4 * y1) - (x2 * y1 + x3 * y2 + x4 * y3 + x1 * y4)
     )
 
     result = np.full(areas.shape, ObjectSizeCategory.ANY.value)
@@ -152,7 +151,5 @@ def get_detection_size_category(
     if metric_target == MetricTarget.ORIENTED_BOUNDING_BOXES:
         if detections.data.get(ORIENTED_BOX_COORDINATES) is None:
             raise ValueError("Detections oriented bounding boxes are not available")
-        return get_obb_size_category(
-            np.array(detections.data[ORIENTED_BOX_COORDINATES])
-        )
+        return get_obb_size_category(np.array(detections.data[ORIENTED_BOX_COORDINATES]))
     raise ValueError("Invalid metric type")

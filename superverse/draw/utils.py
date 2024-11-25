@@ -264,9 +264,7 @@ def draw_text(
     ).pad(text_padding)
 
     if background_color is not None:
-        scene = draw_filled_rectangle(
-            scene=scene, rect=text_rect, color=background_color
-        )
+        scene = draw_filled_rectangle(scene=scene, rect=text_rect, color=background_color)
 
     cv2.putText(
         img=scene,

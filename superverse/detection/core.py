@@ -655,9 +655,7 @@ class Detections:
             ```
         """
 
-        sorted_generated_masks = sorted(
-            sam_result, key=lambda x: x["area"], reverse=True
-        )
+        sorted_generated_masks = sorted(sam_result, key=lambda x: x["area"], reverse=True)
 
         xywh = np.array([mask["bbox"] for mask in sorted_generated_masks])
         mask = np.array([mask["segmentation"] for mask in sorted_generated_masks])
@@ -1378,9 +1376,7 @@ class Detections:
                 )
             )
 
-        merge_groups = box_non_max_merge(
-            predictions=predictions, iou_threshold=threshold
-        )
+        merge_groups = box_non_max_merge(predictions=predictions, iou_threshold=threshold)
 
         result = []
         for merge_group in merge_groups:

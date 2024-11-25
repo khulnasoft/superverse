@@ -127,9 +127,7 @@ def mask_iou_batch(
         * 1024
         * 1024
         // (
-            masks_detection.shape[0]
-            * masks_detection.shape[1]
-            * masks_detection.shape[2]
+            masks_detection.shape[0] * masks_detection.shape[1] * masks_detection.shape[2]
         ),
         1,
     )
@@ -724,9 +722,7 @@ def move_masks(
     return mask_array
 
 
-def scale_boxes(
-    xyxy: npt.NDArray[np.float64], factor: float
-) -> npt.NDArray[np.float64]:
+def scale_boxes(xyxy: npt.NDArray[np.float64], factor: float) -> npt.NDArray[np.float64]:
     """
     Scale the dimensions of bounding boxes.
 

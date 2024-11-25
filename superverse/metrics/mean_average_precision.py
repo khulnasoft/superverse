@@ -210,13 +210,9 @@ class MeanAveragePrecision(Metric):
                     elif self._metric_target == MetricTarget.MASKS:
                         iou = mask_iou_batch(target_contents, prediction_contents)
                     elif self._metric_target == MetricTarget.ORIENTED_BOUNDING_BOXES:
-                        iou = oriented_box_iou_batch(
-                            target_contents, prediction_contents
-                        )
+                        iou = oriented_box_iou_batch(target_contents, prediction_contents)
                     else:
-                        raise ValueError(
-                            "Unsupported metric target for IoU calculation"
-                        )
+                        raise ValueError("Unsupported metric target for IoU calculation")
 
                     matches = self._match_detection_batch(
                         predictions.class_id, targets.class_id, iou, iou_thresholds

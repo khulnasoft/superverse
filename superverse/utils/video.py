@@ -80,7 +80,7 @@ class VideoSink:
             for frame in frames_generator:
                 sink.write_frame(frame=frame)
         ```
-    """  # noqa: E501 // docs
+    """
 
     def __init__(self, target_path: str, video_info: VideoInfo, codec: str = "mp4v"):
         self.target_path = target_path
@@ -174,9 +174,7 @@ def get_video_frames_generator(
             ...
         ```
     """
-    video, start, end = _validate_and_setup_video(
-        source_path, start, end, iterative_seek
-    )
+    video, start, end = _validate_and_setup_video(source_path, start, end, iterative_seek)
     frame_position = start
     while True:
         success, frame = video.read()

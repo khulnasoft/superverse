@@ -70,9 +70,7 @@ class PolygonZone:
 
         x_max, y_max = np.max(polygon, axis=0)
         self.frame_resolution_wh = (x_max + 1, y_max + 1)
-        self.mask = polygon_to_mask(
-            polygon=polygon, resolution_wh=(x_max + 2, y_max + 2)
-        )
+        self.mask = polygon_to_mask(polygon=polygon, resolution_wh=(x_max + 2, y_max + 2))
 
     def trigger(self, detections: Detections) -> npt.NDArray[np.bool_]:
         """

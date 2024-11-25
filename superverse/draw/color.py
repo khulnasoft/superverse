@@ -361,7 +361,7 @@ class ColorPalette:
 
         ![visualized_color_palette](https://media.khulnasoft.com/
         superverse-annotator-examples/visualized_color_palette.png)
-        """  # noqa: E501 // docs
+        """
         mpl_palette = plt.get_cmap(palette_name, color_count)
 
         if hasattr(mpl_palette, "colors"):

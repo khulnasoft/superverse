@@ -351,9 +351,7 @@ def overlay_image(
     crop_y_max = image_height - max((anchor_y + image_height) - scene_height, 0)
 
     if overlay.shape[2] == 4:
-        b, g, r, alpha = cv2.split(
-            overlay[crop_y_min:crop_y_max, crop_x_min:crop_x_max]
-        )
+        b, g, r, alpha = cv2.split(overlay[crop_y_min:crop_y_max, crop_x_min:crop_x_max])
         alpha = alpha[:, :, None] / 255.0
         overlay_color = cv2.merge((b, g, r))
 
@@ -535,26 +533,18 @@ def create_tiles(
     if single_tile_size is None:
         single_tile_size = _aggregate_images_shape(images=images, mode=tile_scaling)
     resized_images = [
-        letterbox_image(
-            image=i, resolution_wh=single_tile_size, color=tile_padding_color
-        )
+        letterbox_image(image=i, resolution_wh=single_tile_size, color=tile_padding_color)
         for i in images
     ]
     grid_size = _establish_grid_size(images=images, grid_size=grid_size)
     if len(images) > grid_size[0] * grid_size[1]:
-        raise ValueError(
-            f"Could not place {len(images)} in grid with size: {grid_size}."
-        )
+        raise ValueError(f"Could not place {len(images)} in grid with size: {grid_size}.")
     if titles is not None:
         titles = fill(sequence=titles, desired_size=len(images), content=None)
     titles_anchors = (
-        [titles_anchors]
-        if not issubclass(type(titles_anchors), list)
-        else titles_anchors
+        [titles_anchors] if not issubclass(type(titles_anchors), list) else titles_anchors
     )
-    titles_anchors = fill(
-        sequence=titles_anchors, desired_size=len(images), content=None
-    )
+    titles_anchors = fill(sequence=titles_anchors, desired_size=len(images), content=None)
     titles_color = unify_to_bgr(color=titles_color)
     titles_background_color = unify_to_bgr(color=titles_background_color)
     tiles = _generate_tiles(
@@ -754,15 +744,11 @@ def _merge_tiles_elements(
     tile_margin: int,
     tile_margin_color: Tuple[int, int, int],
 ) -> np.ndarray:
-    vertical_padding = (
-        np.ones((single_tile_size[1], tile_margin, 3)) * tile_margin_color
-    )
+    vertical_padding = np.ones((single_tile_size[1], tile_margin, 3)) * tile_margin_color
     merged_rows = [
         np.concatenate(
             list(
-                itertools.chain.from_iterable(
-                    zip(row, [vertical_padding] * grid_size[1])
-                )
+                itertools.chain.from_iterable(zip(row, [vertical_padding] * grid_size[1]))
             )[:-1],
             axis=1,
         )

@@ -13,9 +13,7 @@ import superverse as sv
 
 COLORS = sv.ColorPalette.from_hex(["#E6194B", "#3CB44B", "#FFE119", "#3C76D1"])
 COLOR_ANNOTATOR = sv.ColorAnnotator(color=COLORS)
-LABEL_ANNOTATOR = sv.LabelAnnotator(
-    color=COLORS, text_color=sv.Color.from_hex("#000000")
-)
+LABEL_ANNOTATOR = sv.LabelAnnotator(color=COLORS, text_color=sv.Color.from_hex("#000000"))
 
 
 class CustomSink:

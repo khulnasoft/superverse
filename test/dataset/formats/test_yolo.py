@@ -256,9 +256,7 @@ def test_image_name_to_annotation_name(
             np.array([100, 100, 200, 200], dtype=np.float32),
             1,
             (1000, 1000, 3),
-            np.array(
-                [[100, 100], [200, 100], [200, 200], [100, 100]], dtype=np.float32
-            ),
+            np.array([[100, 100], [200, 100], [200, 200], [100, 100]], dtype=np.float32),
             "1 0.10000 0.10000 0.20000 0.10000 0.20000 0.20000 0.10000 0.10000",
             DoesNotRaise(),
         ),  # square mask on square image

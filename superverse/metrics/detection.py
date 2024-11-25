@@ -296,9 +296,7 @@ class ConfusionMatrix:
         true_boxes = targets[:, :class_id_idx]
         detection_boxes = detection_batch_filtered[:, :class_id_idx]
 
-        iou_batch = box_iou_batch(
-            boxes_true=true_boxes, boxes_detection=detection_boxes
-        )
+        iou_batch = box_iou_batch(boxes_true=true_boxes, boxes_detection=detection_boxes)
         matched_idx = np.asarray(iou_batch > iou_threshold).nonzero()
 
         if matched_idx[0].shape[0]:
@@ -309,9 +307,7 @@ class ConfusionMatrix:
         else:
             matches = np.zeros((0, 3))
 
-        matched_true_idx, matched_detection_idx, _ = matches.transpose().astype(
-            np.int16
-        )
+        matched_true_idx, matched_detection_idx, _ = matches.transpose().astype(np.int16)
 
         for i, true_class_value in enumerate(true_classes):
             j = matched_true_idx == i

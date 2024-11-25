@@ -103,9 +103,7 @@ def update_ideal_conf_matrix(conf_matrix: np.ndarray, class_ids: np.ndarray):
     return conf_matrix
 
 
-def worsen_ideal_conf_matrix(
-    conf_matrix: np.ndarray, class_ids: Union[np.ndarray, list]
-):
+def worsen_ideal_conf_matrix(conf_matrix: np.ndarray, class_ids: Union[np.ndarray, list]):
     for class_id in class_ids:
         class_id = int(class_id)
         conf_matrix[class_id, class_id] -= 1
@@ -167,9 +165,7 @@ BAD_CONF_MATRIX = worsen_ideal_conf_matrix(
                 confidence=[0.5, 0.2],
             ),
             True,
-            np.array(
-                [[0, 0, 10, 10, 0, 0.5], [0, 0, 20, 20, 1, 0.2]], dtype=np.float32
-            ),
+            np.array([[0, 0, 10, 10, 0, 0.5], [0, 0, 20, 20, 1, 0.2]], dtype=np.float32),
             DoesNotRaise(),
         ),  # multiple detections; with confidence
     ],

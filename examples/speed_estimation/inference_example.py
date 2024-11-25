@@ -130,9 +130,7 @@ if __name__ == "__main__":
             detections = detections.with_nms(threshold=args.iou_threshold)
             detections = byte_track.update_with_detections(detections=detections)
 
-            points = detections.get_anchors_coordinates(
-                anchor=sv.Position.BOTTOM_CENTER
-            )
+            points = detections.get_anchors_coordinates(anchor=sv.Position.BOTTOM_CENTER)
             points = view_transformer.transform_points(points=points).astype(int)
 
             for tracker_id, [_, y] in zip(detections.tracker_id, points):

@@ -106,9 +106,7 @@ def coco_annotations_to_detections(
         mask = coco_annotations_to_masks(
             image_annotations=image_annotations, resolution_wh=resolution_wh
         )
-        return Detections(
-            class_id=np.asarray(class_ids, dtype=int), xyxy=xyxy, mask=mask
-        )
+        return Detections(class_id=np.asarray(class_ids, dtype=int), xyxy=xyxy, mask=mask)
 
     return Detections(xyxy=xyxy, class_id=np.asarray(class_ids, dtype=int))
 

@@ -65,7 +65,9 @@ def initiate_annotators(
 
 
 def detect(
-    frame: np.ndarray, model: KhulnasoftInferenceModel, confidence_threshold: float = 0.5
+    frame: np.ndarray,
+    model: KhulnasoftInferenceModel,
+    confidence_threshold: float = 0.5,
 ) -> sv.Detections:
     """
     Detect objects in a frame using Inference model, filtering detections by class ID

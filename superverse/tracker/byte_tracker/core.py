@@ -244,9 +244,7 @@ class ByteTrack:
         else:
             detections_second = []
         r_tracked_stracks = [
-            strack_pool[i]
-            for i in u_track
-            if strack_pool[i].state == TrackState.Tracked
+            strack_pool[i] for i in u_track if strack_pool[i].state == TrackState.Tracked
         ]
         dists = matching.iou_distance(r_tracked_stracks, detections_second)
         matches, u_track, u_detection_second = matching.linear_assignment(
@@ -314,9 +312,7 @@ class ByteTrack:
         return output_stracks
 
 
-def joint_tracks(
-    track_list_a: List[STrack], track_list_b: List[STrack]
-) -> List[STrack]:
+def joint_tracks(track_list_a: List[STrack], track_list_b: List[STrack]) -> List[STrack]:
     """
     Joins two lists of tracks, ensuring that the resulting list does not
     contain tracks with duplicate internal_track_id values.

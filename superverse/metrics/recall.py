@@ -149,10 +149,8 @@ class Recall(Metric):
         )
         result.small_objects = self._compute(small_predictions, small_targets)
 
-        medium_predictions, medium_targets = (
-            self._filter_predictions_and_targets_by_size(
-                self._predictions_list, self._targets_list, ObjectSizeCategory.MEDIUM
-            )
+        medium_predictions, medium_targets = self._filter_predictions_and_targets_by_size(
+            self._predictions_list, self._targets_list, ObjectSizeCategory.MEDIUM
         )
         result.medium_objects = self._compute(medium_predictions, medium_targets)
 
@@ -190,13 +188,9 @@ class Recall(Metric):
                     elif self._metric_target == MetricTarget.MASKS:
                         iou = mask_iou_batch(target_contents, prediction_contents)
                     elif self._metric_target == MetricTarget.ORIENTED_BOUNDING_BOXES:
-                        iou = oriented_box_iou_batch(
-                            target_contents, prediction_contents
-                        )
+                        iou = oriented_box_iou_batch(target_contents, prediction_contents)
                     else:
-                        raise ValueError(
-                            "Unsupported metric target for IoU calculation"
-                        )
+                        raise ValueError("Unsupported metric target for IoU calculation")
 
                     matches = self._match_detection_batch(
                         predictions.class_id, targets.class_id, iou, iou_thresholds
@@ -539,9 +533,7 @@ class RecallResult:
         )
         if self.recall_per_class.size == 0:
             out_str += "  No results\n"
-        for class_id, recall_of_class in zip(
-            self.matched_classes, self.recall_per_class
-        ):
+        for class_id, recall_of_class in zip(self.matched_classes, self.recall_per_class):
             out_str += f"  {class_id}: {recall_of_class}\n"
 
         indent = "  "

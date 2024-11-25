@@ -76,9 +76,7 @@ def heatmap_and_track(
 
             detections = sv.Detections.from_ultralytics(result)  # get detections
 
-            detections = byte_tracker.update_with_detections(
-                detections
-            )  # update tracker
+            detections = byte_tracker.update_with_detections(detections)  # update tracker
 
             ### draw heatmap
             annotated_frame = heat_map_annotator.annotate(
@@ -101,9 +99,7 @@ def heatmap_and_track(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Heatmap and Tracking with Superverse"
-    )
+    parser = argparse.ArgumentParser(description="Heatmap and Tracking with Superverse")
     parser.add_argument(
         "--source_weights_path",
         required=True,

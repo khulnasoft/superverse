@@ -98,9 +98,7 @@ def map_detections_class_id(
     return detections_copy
 
 
-def save_dataset_images(
-    dataset: "DetectionDataset", images_directory_path: str
-) -> None:
+def save_dataset_images(dataset: "DetectionDataset", images_directory_path: str) -> None:
     Path(images_directory_path).mkdir(parents=True, exist_ok=True)
     for image_path in dataset.image_paths:
         final_path = os.path.join(images_directory_path, Path(image_path).name)
