@@ -4,8 +4,8 @@ from typing import Optional
 import numpy as np
 import pytest
 
-from metavision.annotators.utils import ColorLookup, resolve_color_idx
-from metavision.detection.core import Detections
+from superverse.annotators.utils import ColorLookup, resolve_color_idx
+from superverse.detection.core import Detections
 from test.test_utils import mock_detections
 
 

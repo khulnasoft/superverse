@@ -3,7 +3,7 @@ from typing import Optional
 
 import pytest
 
-from metavision.draw.color import Color
+from superverse.draw.color import Color
 
 
 @pytest.mark.parametrize(

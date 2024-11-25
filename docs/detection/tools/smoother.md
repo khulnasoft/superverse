@@ -4,4 +4,4 @@ comments: true
 
 # Detection Smoother
 
-:::metavision.detection.tools.smoother.DetectionsSmoother
+:::superverse.detection.tools.smoother.DetectionsSmoother

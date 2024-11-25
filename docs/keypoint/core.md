@@ -5,4 +5,4 @@ status: new
 
 # Keypoint Detection
 
-:::metavision.keypoint.core.KeyPoints
+:::superverse.keypoint.core.KeyPoints

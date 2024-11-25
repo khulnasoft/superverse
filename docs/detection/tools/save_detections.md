@@ -8,10 +8,10 @@ comments: true
   <h2>CSV Sink</h2>
 </div>
 
-:::metavision.detection.tools.csv_sink.CSVSink
+:::superverse.detection.tools.csv_sink.CSVSink
 
 <div class="md-typeset">
   <h2>JSON Sink</h2>
 </div>
 
-:::metavision.detection.tools.json_sink.JSONSink
+:::superverse.detection.tools.json_sink.JSONSink

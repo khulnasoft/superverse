@@ -1,4 +1,4 @@
-name: Metavision Release Documentation Workflow 📚
+name: Superverse Release Documentation Workflow 📚
 on:
   workflow_dispatch:
 

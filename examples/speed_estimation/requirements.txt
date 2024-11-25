@@ -1,4 +1,4 @@
-metavision>=0.20.0
+superverse>=0.20.0
 tqdm==4.66.3
 requests
 ultralytics==8.0.237

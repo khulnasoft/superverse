@@ -7,7 +7,7 @@ import numpy as np
 from inference.models.utils import get_khulnasoft_model
 from tqdm import tqdm
 
-import metavision as sv
+import superverse as sv
 
 COLORS = sv.ColorPalette.from_hex(["#E6194B", "#3CB44B", "#FFE119", "#3C76D1"])
 

@@ -6,7 +6,7 @@ import numpy as np
 from super_gradients.common.object_names import Models
 from super_gradients.training import models
 
-import metavision as sv
+import superverse as sv
 
 SOURCE = np.array([[1252, 787], [2298, 803], [5039, 2159], [-550, 2159]])
 
@@ -40,7 +40,7 @@ class ViewTransformer:
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Vehicle Speed Estimation using YOLO-NAS and Metavision"
+        description="Vehicle Speed Estimation using YOLO-NAS and Superverse"
     )
     parser.add_argument(
         "--source_video_path",

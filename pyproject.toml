@@ -1,18 +1,17 @@
 [tool.poetry]
-name = "metavision"
+name = "superverse"
 version = "0.26.0rc1"
 description = "A set of easy-to-use utils that will come in handy in any Computer Vision project"
-authors = ["Piotr Skalski <piotr.skalski92@gmail.com>"]
+authors = ["Md Sulaiman <dev.sulaiman@icloud.com>"]
 maintainers = [
-    "Piotr Skalski <piotr.skalski92@gmail.com>",
-    "Linas Kondrackis <linas@khulnasoft.com>",
+    "Md Sulaiman <dev.sulaiman@icloud.com>",
 ]
 readme = "README.md"
 license = "MIT"
-packages = [{ include = "metavision" }, { include = "metavision/py.typed" }]
-homepage = "https://github.com/khulnasoft/metavision"
-repository = "https://github.com/khulnasoft/metavision"
-documentation = "https://metavision.khulnasoft.com/latest/"
+packages = [{ include = "superverse" }, { include = "superverse/py.typed" }]
+homepage = "https://github.com/khulnasoft/superverse"
+repository = "https://github.com/khulnasoft/superverse"
+documentation = "https://superverse.khulnasoft.com/latest/"
 keywords = [
     "machine-learning",
     "deep-learning",
@@ -123,12 +122,12 @@ pandas-stubs = ">=2.0.0.230412"
 
 
 [tool.bandit]
-target = ["test", "metavision"]
+target = ["test", "superverse"]
 tests = ["B201", "B301", "B318", "B314", "B303", "B413", "B412", "B410"]
 
 [tool.autoflake]
 check = true
-imports = ["cv2", "metavision"]
+imports = ["cv2", "superverse"]
 
 
 [tool.ruff]

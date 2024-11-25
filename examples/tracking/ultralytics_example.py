@@ -3,7 +3,7 @@ import argparse
 from tqdm import tqdm
 from ultralytics import YOLO
 
-import metavision as sv
+import superverse as sv
 
 
 def process_video(

@@ -4,13 +4,13 @@ from typing import List, Optional, Tuple
 import numpy as np
 import pytest
 
-from metavision.dataset.formats.yolo import (
+from superverse.dataset.formats.yolo import (
     _image_name_to_annotation_name,
     _with_mask,
     object_to_yolo,
     yolo_annotations_to_detections,
 )
-from metavision.detection.core import Detections
+from superverse.detection.core import Detections
 
 
 def _mock_simple_mask(resolution_wh: Tuple[int, int], box: List[int]) -> np.ndarray:

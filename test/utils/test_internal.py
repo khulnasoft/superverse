@@ -5,8 +5,8 @@ from typing import Any, Set
 import numpy as np
 import pytest
 
-from metavision.detection.core import Detections
-from metavision.utils.internal import get_instance_variables
+from superverse.detection.core import Detections
+from superverse.utils.internal import get_instance_variables
 
 
 class MockClass:

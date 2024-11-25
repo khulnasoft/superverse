@@ -4,8 +4,8 @@ from typing import List, Optional, Union
 import numpy as np
 import pytest
 
-from metavision.detection.core import Detections, merge_inner_detection_object_pair
-from metavision.geometry.core import Position
+from superverse.detection.core import Detections, merge_inner_detection_object_pair
+from superverse.geometry.core import Position
 from test.test_utils import mock_detections
 
 PREDICTIONS = np.array(

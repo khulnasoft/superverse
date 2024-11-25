@@ -10,7 +10,7 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 === "Box"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -24,14 +24,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![bounding-box-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/bounding-box-annotator-example-purple.png){ align=center width="800" }
+    ![bounding-box-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/bounding-box-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "RoundBox"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -45,14 +45,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![round-box-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/round-box-annotator-example-purple.png){ align=center width="800" }
+    ![round-box-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/round-box-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "BoxCorner"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -66,14 +66,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![box-corner-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/box-corner-annotator-example-purple.png){ align=center width="800" }
+    ![box-corner-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/box-corner-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Color"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -87,14 +87,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![box-mask-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/box-mask-annotator-example-purple.png){ align=center width="800" }
+    ![box-mask-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/box-mask-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Circle"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -108,14 +108,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![circle-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/circle-annotator-example-purple.png){ align=center width="800" }
+    ![circle-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/circle-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Dot"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -129,14 +129,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![dot-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/dot-annotator-example-purple.png){ align=center width="800" }
+    ![dot-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/dot-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Triangle"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -150,14 +150,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![triangle-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/triangle-annotator-example.png){ align=center width="800" }
+    ![triangle-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/triangle-annotator-example.png){ align=center width="800" }
 
     </div>
 
 === "Ellipse"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -171,14 +171,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![ellipse-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/ellipse-annotator-example-purple.png){ align=center width="800" }
+    ![ellipse-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/ellipse-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Halo"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -192,14 +192,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![halo-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/halo-annotator-example-purple.png){ align=center width="800" }
+    ![halo-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/halo-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "PercentageBar"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -213,14 +213,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![percentage-bar-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/percentage-bar-annotator-example-purple.png){ align=center width="800" }
+    ![percentage-bar-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/percentage-bar-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Mask"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -234,14 +234,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![mask-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/mask-annotator-example-purple.png){ align=center width="800" }
+    ![mask-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/mask-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Polygon"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -255,14 +255,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![polygon-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/polygon-annotator-example-purple.png){ align=center width="800" }
+    ![polygon-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/polygon-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Label"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -283,14 +283,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![label-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/label-annotator-example-purple.png){ align=center width="800" }
+    ![label-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/label-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "RichLabel"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -314,14 +314,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![label-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/label-annotator-example-purple.png){ align=center width="800" }
+    ![label-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/label-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Icon"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -341,14 +341,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![icon-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/icon-annotator-example.png){ align=center width="800" }
+    ![icon-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/icon-annotator-example.png){ align=center width="800" }
 
     </div>
 
 === "Crop"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -363,7 +363,7 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 === "Blur"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -377,14 +377,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![blur-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/blur-annotator-example-purple.png){ align=center width="800" }
+    ![blur-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/blur-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Pixelate"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -398,14 +398,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![pixelate-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/pixelate-annotator-example-10.png){ align=center width="800" }
+    ![pixelate-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/pixelate-annotator-example-10.png){ align=center width="800" }
 
     </div>
 
 === "Trace"
 
     ```python
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO('yolov8x.pt')
@@ -429,14 +429,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![trace-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/trace-annotator-example-purple.png){ align=center width="800" }
+    ![trace-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/trace-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "HeatMap"
 
     ```python
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO('yolov8x.pt')
@@ -458,14 +458,14 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![heat-map-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/heat-map-annotator-example-purple.png){ align=center width="800" }
+    ![heat-map-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/heat-map-annotator-example-purple.png){ align=center width="800" }
 
     </div>
 
 === "Background Color"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     detections = sv.Detections(...)
@@ -479,151 +479,151 @@ Annotators accept detections and apply box or mask visualizations to the detecti
 
     <div class="result" markdown>
 
-    ![background-overlay-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/background-color-annotator-example-purple.png)
+    ![background-overlay-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/background-color-annotator-example-purple.png)
 
     </div>
 
 <div class="md-typeset">
-    <h2>Try Metavision Annotators on your own image</h2>
+    <h2>Try Superverse Annotators on your own image</h2>
     Visualize annotators on images with COCO classes such as people, vehicles, animals, household items.
 </div>
 
-<div style="height: 400px; width: 100%; border-radius: 8px; overflow: hidden;"><iframe src="https://app.khulnasoft.com/workflows/embed/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JrZmxvd0lkIjoiNDdtd2xuWW16S25VNWtOYUZjMG8iLCJ3b3Jrc3BhY2VJZCI6ImtyT1RBYm5jRmhvUU1DZExPbGU0IiwidXNlcklkIjoiRVJNUFBZY3FQMmZWWjB1NkRpNXZaYXJDdlZPMiIsImlhdCI6MTcyNjgzOTM2N30.gj2F6SnmmURAScJe4PTC1raUXsAK5mZyrUIGIJ44NhM?hideToolbar=true&hideHeader=true&defaultVisual=true" loading="lazy" title="Khulnasoft Workflow for Metavision Annotators" style="width: 100%; height: 100%; min-height: 400px; border: none;"></iframe></div>
+<div style="height: 400px; width: 100%; border-radius: 8px; overflow: hidden;"><iframe src="https://app.khulnasoft.com/workflows/embed/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JrZmxvd0lkIjoiNDdtd2xuWW16S25VNWtOYUZjMG8iLCJ3b3Jrc3BhY2VJZCI6ImtyT1RBYm5jRmhvUU1DZExPbGU0IiwidXNlcklkIjoiRVJNUFBZY3FQMmZWWjB1NkRpNXZaYXJDdlZPMiIsImlhdCI6MTcyNjgzOTM2N30.gj2F6SnmmURAScJe4PTC1raUXsAK5mZyrUIGIJ44NhM?hideToolbar=true&hideHeader=true&defaultVisual=true" loading="lazy" title="Khulnasoft Workflow for Superverse Annotators" style="width: 100%; height: 100%; min-height: 400px; border: none;"></iframe></div>
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.BoxAnnotator">BoxAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.BoxAnnotator">BoxAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.BoxAnnotator
+:::superverse.annotators.core.BoxAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.RoundBoxAnnotator">RoundBoxAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.RoundBoxAnnotator">RoundBoxAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.RoundBoxAnnotator
+:::superverse.annotators.core.RoundBoxAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.BoxCornerAnnotator">BoxCornerAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.BoxCornerAnnotator">BoxCornerAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.BoxCornerAnnotator
+:::superverse.annotators.core.BoxCornerAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.OrientedBoxAnnotator">OrientedBoxAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.OrientedBoxAnnotator">OrientedBoxAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.OrientedBoxAnnotator
+:::superverse.annotators.core.OrientedBoxAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.ColorAnnotator">ColorAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.ColorAnnotator">ColorAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.ColorAnnotator
+:::superverse.annotators.core.ColorAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.CircleAnnotator">CircleAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.CircleAnnotator">CircleAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.CircleAnnotator
+:::superverse.annotators.core.CircleAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.DotAnnotator">DotAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.DotAnnotator">DotAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.DotAnnotator
+:::superverse.annotators.core.DotAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.TriangleAnnotator">TriangleAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.TriangleAnnotator">TriangleAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.TriangleAnnotator
+:::superverse.annotators.core.TriangleAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.EllipseAnnotator">EllipseAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.EllipseAnnotator">EllipseAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.EllipseAnnotator
+:::superverse.annotators.core.EllipseAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.HaloAnnotator">HaloAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.HaloAnnotator">HaloAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.HaloAnnotator
+:::superverse.annotators.core.HaloAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.PercentageBarAnnotator">PercentageBarAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.PercentageBarAnnotator">PercentageBarAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.PercentageBarAnnotator
+:::superverse.annotators.core.PercentageBarAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.HeatMapAnnotator">HeatMapAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.HeatMapAnnotator">HeatMapAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.HeatMapAnnotator
+:::superverse.annotators.core.HeatMapAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.MaskAnnotator">MaskAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.MaskAnnotator">MaskAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.MaskAnnotator
+:::superverse.annotators.core.MaskAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.PolygonAnnotator">PolygonAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.PolygonAnnotator">PolygonAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.PolygonAnnotator
+:::superverse.annotators.core.PolygonAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.LabelAnnotator">LabelAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.LabelAnnotator">LabelAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.LabelAnnotator
+:::superverse.annotators.core.LabelAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.RichLabelAnnotator">RichLabelAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.RichLabelAnnotator">RichLabelAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.RichLabelAnnotator
+:::superverse.annotators.core.RichLabelAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.IconAnnotator">IconAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.IconAnnotator">IconAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.IconAnnotator
+:::superverse.annotators.core.IconAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.BlurAnnotator">BlurAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.BlurAnnotator">BlurAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.BlurAnnotator
+:::superverse.annotators.core.BlurAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.PixelateAnnotator">PixelateAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.PixelateAnnotator">PixelateAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.PixelateAnnotator
+:::superverse.annotators.core.PixelateAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.TraceAnnotator">TraceAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.TraceAnnotator">TraceAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.TraceAnnotator
+:::superverse.annotators.core.TraceAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.CropAnnotator">CropAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.CropAnnotator">CropAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.CropAnnotator
+:::superverse.annotators.core.CropAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.BackgroundOverlayAnnotator">BackgroundOverlayAnnotator</a></h2>
+    <h2><a href="#superverse.annotators.core.BackgroundOverlayAnnotator">BackgroundOverlayAnnotator</a></h2>
 </div>
 
-:::metavision.annotators.core.BackgroundOverlayAnnotator
+:::superverse.annotators.core.BackgroundOverlayAnnotator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.annotators.core.ColorLookup">ColorLookup</a></h2>
+    <h2><a href="#superverse.annotators.core.ColorLookup">ColorLookup</a></h2>
 </div>
 
-:::metavision.annotators.utils.ColorLookup
+:::superverse.annotators.utils.ColorLookup

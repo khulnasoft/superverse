@@ -5,25 +5,25 @@ comments: true
 # Double Detection Filter
 
 <div class="md-typeset">
-  <h2><a href="#metavision.detection.overlap_filter.OverlapFilter">OverlapFilter</a></h2>
+  <h2><a href="#superverse.detection.overlap_filter.OverlapFilter">OverlapFilter</a></h2>
 </div>
 
-:::metavision.detection.overlap_filter.OverlapFilter
+:::superverse.detection.overlap_filter.OverlapFilter
 
 <div class="md-typeset">
-  <h2><a href="#metavision.detection.overlap_filter.box_non_max_suppression">box_non_max_suppression</a></h2>
+  <h2><a href="#superverse.detection.overlap_filter.box_non_max_suppression">box_non_max_suppression</a></h2>
 </div>
 
-:::metavision.detection.overlap_filter.box_non_max_suppression
+:::superverse.detection.overlap_filter.box_non_max_suppression
 
 <div class="md-typeset">
-  <h2><a href="#metavision.detection.overlap_filter.mask_non_max_suppression">mask_non_max_suppression</a></h2>
+  <h2><a href="#superverse.detection.overlap_filter.mask_non_max_suppression">mask_non_max_suppression</a></h2>
 </div>
 
-:::metavision.detection.overlap_filter.mask_non_max_suppression
+:::superverse.detection.overlap_filter.mask_non_max_suppression
 
 <div class="md-typeset">
-  <h2><a href="#metavision.detection.overlap_filter.box_non_max_merge">box_non_max_merge</a></h2>
+  <h2><a href="#superverse.detection.overlap_filter.box_non_max_merge">box_non_max_merge</a></h2>
 </div>
 
-:::metavision.detection.overlap_filter.box_non_max_merge
+:::superverse.detection.overlap_filter.box_non_max_merge

@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 from inference.models.utils import get_khulnasoft_model
 
-import metavision as sv
+import superverse as sv
 
 SOURCE = np.array([[1252, 787], [2298, 803], [5039, 2159], [-550, 2159]])
 
@@ -40,7 +40,7 @@ class ViewTransformer:
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Vehicle Speed Estimation using Inference and Metavision"
+        description="Vehicle Speed Estimation using Inference and Superverse"
     )
     parser.add_argument(
         "--model_id",

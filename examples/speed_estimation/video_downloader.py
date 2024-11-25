@@ -1,6 +1,6 @@
 import os
 
-from metavision.assets import VideoAssets, download_assets
+from superverse.assets import VideoAssets, download_assets
 
 if not os.path.exists("data"):
     os.makedirs("data")

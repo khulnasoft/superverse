@@ -4,8 +4,8 @@ from typing import Dict, List, Optional, Tuple, Union
 import numpy as np
 import pytest
 
-from metavision import Detections
-from metavision.dataset.formats.coco import (
+from superverse import Detections
+from superverse.dataset.formats.coco import (
     build_coco_class_index_mapping,
     classes_to_coco_categories,
     coco_annotations_to_detections,

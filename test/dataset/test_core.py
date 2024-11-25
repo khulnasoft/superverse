@@ -3,7 +3,7 @@ from typing import List, Optional
 
 import pytest
 
-from metavision import DetectionDataset
+from superverse import DetectionDataset
 from test.test_utils import mock_detections
 
 

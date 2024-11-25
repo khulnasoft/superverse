@@ -4,8 +4,8 @@ import numpy as np
 import pytest
 from PIL import Image, ImageChops
 
-from metavision import Color, Point
-from metavision.utils.image import create_tiles, letterbox_image, resize_image
+from superverse import Color, Point
+from superverse.utils.image import create_tiles, letterbox_image, resize_image
 
 
 def test_resize_image_for_opencv_image() -> None:

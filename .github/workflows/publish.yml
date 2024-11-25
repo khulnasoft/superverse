@@ -1,4 +1,4 @@
-name: Publish Metavision Releases to PyPI and TestPyPI
+name: Publish Superverse Releases to PyPI and TestPyPI
 on:
   push:
     tags:

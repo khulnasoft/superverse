@@ -1,6 +1,6 @@
 import pytest
 
-from metavision.utils.iterables import create_batches, fill
+from superverse.utils.iterables import create_batches, fill
 
 
 @pytest.mark.parametrize(

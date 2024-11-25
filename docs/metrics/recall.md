@@ -6,13 +6,13 @@ status: new
 # Recall
 
 <div class="md-typeset">
-    <h2><a href="#metavision.metrics.recall.Recall">Recall</a></h2>
+    <h2><a href="#superverse.metrics.recall.Recall">Recall</a></h2>
 </div>
 
-:::metavision.metrics.recall.Recall
+:::superverse.metrics.recall.Recall
 
 <div class="md-typeset">
-    <h2><a href="#metavision.metrics.recall.RecallResult">RecallResult</a></h2>
+    <h2><a href="#superverse.metrics.recall.RecallResult">RecallResult</a></h2>
 </div>
 
-:::metavision.metrics.recall.RecallResult
+:::superverse.metrics.recall.RecallResult

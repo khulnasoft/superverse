@@ -3,7 +3,7 @@ from typing import List
 import numpy as np
 import pytest
 
-import metavision as sv
+import superverse as sv
 
 
 @pytest.mark.parametrize(

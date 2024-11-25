@@ -4,7 +4,7 @@ from typing import List, Optional
 import numpy as np
 import pytest
 
-from metavision.detection.overlap_filter import (
+from superverse.detection.overlap_filter import (
     box_non_max_suppression,
     group_overlapping_boxes,
     mask_non_max_suppression,

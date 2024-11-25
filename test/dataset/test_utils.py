@@ -5,8 +5,8 @@ import numpy as np
 import numpy.typing as npt
 import pytest
 
-from metavision import Detections
-from metavision.dataset.utils import (
+from superverse import Detections
+from superverse.dataset.utils import (
     build_class_index_mapping,
     map_detections_class_id,
     mask_to_rle,

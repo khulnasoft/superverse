@@ -3,7 +3,7 @@ from typing import List, Optional, Tuple
 import numpy as np
 import pytest
 
-from metavision.detection.lmm import from_paligemma
+from superverse.detection.lmm import from_paligemma
 
 
 @pytest.mark.parametrize(

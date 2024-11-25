@@ -1,6 +1,6 @@
 import pytest
 
-from metavision.geometry.core import Point, Vector
+from superverse.geometry.core import Point, Vector
 
 
 @pytest.mark.parametrize(

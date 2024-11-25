@@ -1,10 +1,10 @@
-site_name: Metavision
-site_url: https://metavision.khulnasoft.com/
+site_name: Superverse
+site_url: https://superverse.khulnasoft.com/
 site_author: Khulnasoft
 site_description: A set of easy-to-use utilities that will come in handy in any computer vision project.
-repo_name: khulnasoft/metavision
-repo_url: https://github.com/khulnasoft/metavision
-edit_uri: https://github.com/khulnasoft/metavision/tree/main/docs
+repo_name: khulnasoft/superverse
+repo_url: https://github.com/khulnasoft/superverse
+edit_uri: https://github.com/khulnasoft/superverse/tree/main/docs
 copyright: Khulnasoft 2024. All rights reserved.
 
 extra:
@@ -12,7 +12,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/khulnasoft
     - icon: fontawesome/brands/python
-      link: https://pypi.org/project/metavision
+      link: https://pypi.org/project/superverse
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/khulnasoft
     - icon: fontawesome/brands/youtube
@@ -34,7 +34,7 @@ extra_css:
   - stylesheets/cookbooks-card.css
 
 nav:
-  - Metavision: index.md
+  - Superverse: index.md
   - Learn:
       - Detect and Annotate: how_to/detect_and_annotate.md
       - Save Detections: how_to/save_detections.md
@@ -82,7 +82,7 @@ nav:
           - Geometry: utils/geometry.md
       - Assets: assets.md
   - Cookbooks: cookbooks.md
-  - Cheatsheet: https://khulnasoft.github.io/cheatsheet-metavision/
+  - Cheatsheet: https://khulnasoft.github.io/cheatsheet-superverse/
   - Contribute:
       - Contributing: contributing.md
       - Code of Conduct: code_of_conduct.md
@@ -95,8 +95,8 @@ theme:
   name: "material"
   icon:
     edit: material/pencil
-  logo: assets/metavision-lenny.png
-  favicon: assets/metavision-lenny.png
+  logo: assets/superverse-lenny.png
+  favicon: assets/superverse-lenny.png
   custom_dir: docs/theme
   features:
     - navigation.tracking
@@ -141,7 +141,7 @@ plugins:
         python:
           options:
             parameter_headings: true
-            paths: [metavision]
+            paths: [superverse]
             load_external_modules: true
             allow_inspection: true
             show_bases: true
@@ -152,7 +152,7 @@ plugins:
             show_category_heading: true
           domains: [std, py]
   - git-committers:
-      repository: khulnasoft/metavision
+      repository: khulnasoft/superverse
       branch: develop
       token: !ENV ["GITHUB_TOKEN"]
   - git-revision-date-localized:

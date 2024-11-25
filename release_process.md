@@ -1,6 +1,6 @@
 # Release Process
 
-This doc outlines how metavision is released into production.
+This doc outlines how superverse is released into production.
 
 It assumes you already have the code changes, as well as a draft of the release notes.
 
@@ -8,15 +8,15 @@ It assumes you already have the code changes, as well as a draft of the release 
 2. Create and merge a PR, merging `develop` into `main`, containing:
    - A commit that updates the project version in `pyproject.toml`.
    - All changes made during the release.
-3. Tag the commit with the new metavision version.
+3. Tag the commit with the new superverse version.
    - make sure to pull from `main` !
    - Verify that the latest merge commits exists. `git log`.
    - Run `git tag x.y.z`, with your version
    - Check with `git log`.
    - Run `git push origin --tags`
-   - Upon pushing the tag, the [PyPi](https://pypi.org/project/metavision/) should update to the new version. Check this!
+   - Upon pushing the tag, the [PyPi](https://pypi.org/project/superverse/) should update to the new version. Check this!
 4. Open and merge a PR, merging `main` into `develop`.
-5. Update the docs by running the [Metavision Release Documentation Workflow 📚](https://github.com/khulnasoft/metavision/actions/workflows/publish-release-docs.yml) workflow from GitHub.
+5. Update the docs by running the [Superverse Release Documentation Workflow 📚](https://github.com/khulnasoft/superverse/actions/workflows/publish-release-docs.yml) workflow from GitHub.
    - Select the `main` branch from the dropdown.
 6. Create a release on GitHub.
    - Go to releases

@@ -9,15 +9,15 @@ monitoring the duration that objects or individuals spend in predefined areas of
 frames. This example project, perfect for retail analytics or traffic management
 applications.
 
-https://github.com/khulnasoft/metavision/assets/26109316/d051cc8a-dd15-41d4-aa36-d38b86334c39
+https://github.com/khulnasoft/superverse/assets/26109316/d051cc8a-dd15-41d4-aa36-d38b86334c39
 
 ## 💻 install
 
 - clone repository and navigate to example directory
 
   ```bash
-  git clone https://github.com/khulnasoft/metavision.git
-  cd metavision/examples/time_in_zone
+  git clone https://github.com/khulnasoft/superverse.git
+  cd superverse/examples/time_in_zone
   ```
 
 - setup python environment and activate it \[optional\]
@@ -109,7 +109,7 @@ python scripts/draw_zones.py \
     --zone_configuration_path "data/traffic/config.json"
 ```
 
-https://github.com/khulnasoft/metavision/assets/26109316/9d514c9e-2a61-418b-ae49-6ac1ad6ae5ac
+https://github.com/khulnasoft/superverse/assets/26109316/9d514c9e-2a61-418b-ae49-6ac1ad6ae5ac
 
 ## 🎬 video & stream processing
 
@@ -134,7 +134,7 @@ python inference_file_example.py \
     --iou_threshold 0.7
 ```
 
-https://github.com/khulnasoft/metavision/assets/26109316/d051cc8a-dd15-41d4-aa36-d38b86334c39
+https://github.com/khulnasoft/superverse/assets/26109316/d051cc8a-dd15-41d4-aa36-d38b86334c39
 
 ```bash
 python inference_file_example.py \
@@ -146,7 +146,7 @@ python inference_file_example.py \
     --iou_threshold 0.7
 ```
 
-https://github.com/khulnasoft/metavision/assets/26109316/5ec896d7-4b39-4426-8979-11e71666878b
+https://github.com/khulnasoft/superverse/assets/26109316/5ec896d7-4b39-4426-8979-11e71666878b
 
 ### `inference_stream_example`
 
@@ -260,8 +260,8 @@ This demo integrates two main components, each with its own licensing:
   under the [AGPL-3.0 license](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
   You can find more details about this license here.
 
-- metavision: The analytics code that powers the zone-based analysis in this demo is
-  based on the Metavision library, which is licensed under the
-  [MIT license](https://github.com/khulnasoft/metavision/blob/develop/LICENSE.md). This
-  makes the Metavision part of the code fully open source and freely usable in your
+- superverse: The analytics code that powers the zone-based analysis in this demo is
+  based on the Superverse library, which is licensed under the
+  [MIT license](https://github.com/khulnasoft/superverse/blob/develop/LICENSE.md). This
+  makes the Superverse part of the code fully open source and freely usable in your
   projects.

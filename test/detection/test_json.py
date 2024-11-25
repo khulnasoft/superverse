@@ -4,7 +4,7 @@ from typing import Any, Dict, List
 
 import pytest
 
-import metavision as sv
+import superverse as sv
 from test.test_utils import mock_detections
 
 

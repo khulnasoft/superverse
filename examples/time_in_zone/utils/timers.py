@@ -3,7 +3,7 @@ from typing import Dict
 
 import numpy as np
 
-import metavision as sv
+import superverse as sv
 
 
 class FPSBasedTimer:

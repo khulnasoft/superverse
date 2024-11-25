@@ -4,17 +4,17 @@
 
 This script performs traffic flow analysis using YOLOv8, an object-detection method and
 ByteTrack, a simple yet effective online multi-object tracking method. It uses the
-metavision package for multiple tasks such as tracking, annotations, etc.
+superverse package for multiple tasks such as tracking, annotations, etc.
 
-https://github.com/khulnasoft/metavision/assets/26109316/c9436828-9fbf-4c25-ae8c-60e9c81b3900
+https://github.com/khulnasoft/superverse/assets/26109316/c9436828-9fbf-4c25-ae8c-60e9c81b3900
 
 ## 💻 install
 
 - clone repository and navigate to example directory
 
   ```bash
-  git clone https://github.com/khulnasoft/metavision.git
-  cd metavision/examples/traffic_analysis
+  git clone https://github.com/khulnasoft/superverse.git
+  cd superverse/examples/traffic_analysis
   ```
 
 - setup python environment and activate it \[optional\]
@@ -116,8 +116,8 @@ This demo integrates two main components, each with its own licensing:
   under the [AGPL-3.0 license](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
   You can find more details about this license here.
 
-- metavision: The analytics code that powers the zone-based analysis in this demo is
-  based on the Metavision library, which is licensed under the
-  [MIT license](https://github.com/khulnasoft/metavision/blob/develop/LICENSE.md). This
-  makes the Metavision part of the code fully open source and freely usable in your
+- superverse: The analytics code that powers the zone-based analysis in this demo is
+  based on the Superverse library, which is licensed under the
+  [MIT license](https://github.com/khulnasoft/superverse/blob/develop/LICENSE.md). This
+  makes the Superverse part of the code fully open source and freely usable in your
   projects.

@@ -9,7 +9,7 @@ from inference.core.models.khulnasoft import KhulnasoftInferenceModel
 from inference.models.utils import get_khulnasoft_model
 from tqdm import tqdm
 
-import metavision as sv
+import superverse as sv
 
 COLORS = sv.ColorPalette.DEFAULT
 
@@ -129,7 +129,7 @@ def annotate(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Counting people in zones with Inference and Metavision"
+        description="Counting people in zones with Inference and Superverse"
     )
 
     parser.add_argument(

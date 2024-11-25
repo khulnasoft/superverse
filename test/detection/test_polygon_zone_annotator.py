@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-import metavision as sv
+import superverse as sv
 
 COLOR = sv.Color(r=255, g=0, b=0)
 THICKNESS = 2

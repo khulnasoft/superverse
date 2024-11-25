@@ -17,7 +17,7 @@ Allows you to select detections that belong only to one selected class.
 === "After"
 
 ````python
-import metavision as sv
+import superverse as sv
 
     detections = sv.Detections(...)
     detections = detections[detections.class_id == 0]
@@ -25,13 +25,13 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![by-specific-class](https://media.khulnasoft.com/open-source/metavision/metavision-detection-by-specific-class.png){ align=center width="800" }
+    ![by-specific-class](https://media.khulnasoft.com/open-source/superverse/superverse-detection-by-specific-class.png){ align=center width="800" }
 
     </div>
 
 === "Before"
 ```python
-import metavision as sv
+import superverse as sv
 
     detections = sv.Detections(...)
     detections = detections[detections.class_id == 0]
@@ -39,7 +39,7 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![original](https://media.khulnasoft.com/open-source/metavision/metavision-detection-original.png){ align=center width="800" }
+    ![original](https://media.khulnasoft.com/open-source/superverse/superverse-detection-original.png){ align=center width="800" }
 
     </div>
 
@@ -50,7 +50,7 @@ Allows you to select detections that belong only to selected set of classes.
 === "After"
 ```python
 import numpy as np
-import metavision as sv
+import superverse as sv
 
     selected_classes = [0, 2, 3]
     detections = sv.Detections(...)
@@ -59,14 +59,14 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![by-set-of-classes](https://media.khulnasoft.com/open-source/metavision/metavision-detection-by-set-of-classes.png){ align=center width="800" }
+    ![by-set-of-classes](https://media.khulnasoft.com/open-source/superverse/superverse-detection-by-set-of-classes.png){ align=center width="800" }
 
     </div>
 
 === "Before"
 ```python
 import numpy as np
-import metavision as sv
+import superverse as sv
 
     class_id = [0, 2, 3]
     detections = sv.Detections(...)
@@ -75,7 +75,7 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![original](https://media.khulnasoft.com/open-source/metavision/metavision-detection-original.png){ align=center width="800" }
+    ![original](https://media.khulnasoft.com/open-source/superverse/superverse-detection-original.png){ align=center width="800" }
 
     </div>
 
@@ -85,7 +85,7 @@ Allows you to select detections with specific confidence value, for example high
 
 === "After"
 ```python
-import metavision as sv
+import superverse as sv
 
     detections = sv.Detections(...)
     detections = detections[detections.confidence > 0.5]
@@ -93,13 +93,13 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![by-set-of-classes](https://media.khulnasoft.com/open-source/metavision/metavision-detection-by-confidence.png){ align=center width="800" }
+    ![by-set-of-classes](https://media.khulnasoft.com/open-source/superverse/superverse-detection-by-confidence.png){ align=center width="800" }
 
     </div>
 
 === "Before"
 ```python
-import metavision as sv
+import superverse as sv
 
     detections = sv.Detections(...)
     detections = detections[detections.confidence > 0.5]
@@ -107,7 +107,7 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![original](https://media.khulnasoft.com/open-source/metavision/metavision-detection-original.png){ align=center width="800" }
+    ![original](https://media.khulnasoft.com/open-source/superverse/superverse-detection-original.png){ align=center width="800" }
 
     </div>
 
@@ -118,7 +118,7 @@ detection in the image. In the example below, we have sifted out the detections 
 
 === "After"
 ```python
-import metavision as sv
+import superverse as sv
 
     detections = sv.Detections(...)
     detections = detections[detections.area > 1000]
@@ -126,13 +126,13 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![by-area](https://media.khulnasoft.com/open-source/metavision/metavision-detection-by-area.png){ align=center width="800" }
+    ![by-area](https://media.khulnasoft.com/open-source/superverse/superverse-detection-by-area.png){ align=center width="800" }
 
     </div>
 
 === "Before"
 ```python
-import metavision as sv
+import superverse as sv
 
     detections = sv.Detections(...)
     detections = detections[detections.area > 1000]
@@ -140,7 +140,7 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![original](https://media.khulnasoft.com/open-source/metavision/metavision-detection-original.png){ align=center width="800" }
+    ![original](https://media.khulnasoft.com/open-source/superverse/superverse-detection-original.png){ align=center width="800" }
 
     </div>
 
@@ -153,7 +153,7 @@ occupied by them. In the example below, we remove too large detections.
 
 === "After"
 ```python
-import metavision as sv
+import superverse as sv
 
     image = ...
     height, width, channels = image.shape
@@ -165,13 +165,13 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![by-relative-area](https://media.khulnasoft.com/open-source/metavision/metavision-detection-by-relative-area.png?updatedAt=1683207183434){ align=center width="800" }
+    ![by-relative-area](https://media.khulnasoft.com/open-source/superverse/superverse-detection-by-relative-area.png?updatedAt=1683207183434){ align=center width="800" }
 
     </div>
 
 === "Before"
 ```python
-import metavision as sv
+import superverse as sv
 
     image = ...
     height, width, channels = image.shape
@@ -183,7 +183,7 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![original](https://media.khulnasoft.com/open-source/metavision/metavision-detection-original.png){ align=center width="800" }
+    ![original](https://media.khulnasoft.com/open-source/superverse/superverse-detection-original.png){ align=center width="800" }
 
     </div>
 
@@ -195,7 +195,7 @@ simple and fast.
 
 === "After"
 ```python
-import metavision as sv
+import superverse as sv
 
     detections = sv.Detections(...)
     w = detections.xyxy[:, 2] - detections.xyxy[:, 0]
@@ -205,13 +205,13 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![by-box-dimensions](https://media.khulnasoft.com/open-source/metavision/metavision-detection-by-box-dimensions.png){ align=center width="800" }
+    ![by-box-dimensions](https://media.khulnasoft.com/open-source/superverse/superverse-detection-by-box-dimensions.png){ align=center width="800" }
 
     </div>
 
 === "Before"
 ```python
-import metavision as sv
+import superverse as sv
 
     detections = sv.Detections(...)
     w = detections.xyxy[:, 2] - detections.xyxy[:, 0]
@@ -221,7 +221,7 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![original](https://media.khulnasoft.com/open-source/metavision/metavision-detection-original.png){ align=center width="800" }
+    ![original](https://media.khulnasoft.com/open-source/superverse/superverse-detection-original.png){ align=center width="800" }
 
     </div>
 
@@ -232,7 +232,7 @@ zone. In the example below you can see how to filter out all detections located 
 
 === "After"
 ```python
-import metavision as sv
+import superverse as sv
 
     zone = sv.PolygonZone(...)
     detections = sv.Detections(...)
@@ -242,13 +242,13 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![by-polygon-zone](https://media.khulnasoft.com/open-source/metavision/metavision-detection-by-polygon-zone.png?updatedAt=1683211380445){ align=center width="800" }
+    ![by-polygon-zone](https://media.khulnasoft.com/open-source/superverse/superverse-detection-by-polygon-zone.png?updatedAt=1683211380445){ align=center width="800" }
 
     </div>
 
 === "Before"
 ```python
-import metavision as sv
+import superverse as sv
 
     zone = sv.PolygonZone(...)
     detections = sv.Detections(...)
@@ -258,7 +258,7 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![original](https://media.khulnasoft.com/open-source/metavision/metavision-detection-original.png){ align=center width="800" }
+    ![original](https://media.khulnasoft.com/open-source/superverse/superverse-detection-original.png){ align=center width="800" }
 
     </div>
 
@@ -268,7 +268,7 @@ import metavision as sv
 
 === "After"
 ```python
-import metavision as sv
+import superverse as sv
 
     zone = sv.PolygonZone(...)
     detections = sv.Detections(...)
@@ -278,13 +278,13 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![by-mixed-conditions](https://media.khulnasoft.com/open-source/metavision/metavision-detection-by-mixed-conditions.png){ align=center width="800" }
+    ![by-mixed-conditions](https://media.khulnasoft.com/open-source/superverse/superverse-detection-by-mixed-conditions.png){ align=center width="800" }
 
     </div>
 
 === "Before"
 ```python
-import metavision as sv
+import superverse as sv
 
     zone = sv.PolygonZone(...)
     detections = sv.Detections(...)
@@ -294,7 +294,7 @@ import metavision as sv
 
     <div class="result" markdown>
 
-    ![original](https://media.khulnasoft.com/open-source/metavision/metavision-detection-original.png){ align=center width="800" }
+    ![original](https://media.khulnasoft.com/open-source/superverse/superverse-detection-original.png){ align=center width="800" }
 
     </div>
 ````

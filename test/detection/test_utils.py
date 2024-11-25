@@ -5,8 +5,8 @@ import numpy as np
 import numpy.typing as npt
 import pytest
 
-from metavision.config import CLASS_NAME_DATA_FIELD
-from metavision.detection.utils import (
+from superverse.config import CLASS_NAME_DATA_FIELD
+from superverse.detection.utils import (
     calculate_masks_centroids,
     clip_boxes,
     contains_holes,

@@ -3,8 +3,8 @@ from typing import Any, Dict, List, Optional
 import numpy as np
 import numpy.typing as npt
 
-from metavision.detection.core import Detections
-from metavision.keypoint.core import KeyPoints
+from superverse.detection.core import Detections
+from superverse.keypoint.core import KeyPoints
 
 
 def mock_detections(

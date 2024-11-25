@@ -6,7 +6,7 @@ from typing import Any, Optional, Tuple
 import cv2
 import numpy as np
 
-import metavision as sv
+import superverse as sv
 
 KEY_ENTER = 13
 KEY_NEWLINE = 10

@@ -10,15 +10,15 @@ of a video. Each zone and the objects within it are marked in different colors, 
 it easy to see and count the objects in each area. The tool can save this enhanced
 video or display it live on the screen.
 
-https://github.com/khulnasoft/metavision/assets/26109316/f84db7b5-79e2-4142-a1da-64daa43ce667
+https://github.com/khulnasoft/superverse/assets/26109316/f84db7b5-79e2-4142-a1da-64daa43ce667
 
 ## 💻 install
 
 - clone repository and navigate to example directory
 
   ```bash
-  git clone https://github.com/khulnasoft/metavision.git
-  cd metavision/examples/count_people_in_zone
+  git clone https://github.com/khulnasoft/superverse.git
+  cd superverse/examples/count_people_in_zone
   ```
 
 - setup python environment and activate it \[optional\]
@@ -125,8 +125,8 @@ This demo integrates two main components, each with its own licensing:
   under the [AGPL-3.0 license](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
   You can find more details about this license here.
 
-- metavision: The analytics code that powers the zone-based analysis in this demo is
-  based on the Metavision library, which is licensed under the
-  [MIT license](https://github.com/khulnasoft/metavision/blob/develop/LICENSE.md). This
-  makes the Metavision part of the code fully open source and freely usable in your
+- superverse: The analytics code that powers the zone-based analysis in this demo is
+  based on the Superverse library, which is licensed under the
+  [MIT license](https://github.com/khulnasoft/superverse/blob/develop/LICENSE.md). This
+  makes the Superverse part of the code fully open source and freely usable in your
   projects.

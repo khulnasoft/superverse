@@ -3,7 +3,7 @@ from contextlib import ExitStack as DoesNotRaise
 import numpy as np
 import pytest
 
-import metavision as sv
+import superverse as sv
 from test.test_utils import mock_detections
 
 DETECTION_BOXES = np.array(

@@ -1,12 +1,12 @@
-# Contributing to Metavision 🛠️
+# Contributing to Superverse 🛠️
 
-Thank you for your interest in contributing to Metavision!
+Thank you for your interest in contributing to Superverse!
 
 We are actively improving this library to reduce the amount of work you need to do to solve common computer vision problems.
 
 ## Code of Conduct
 
-Please read and adhere to our [Code of Conduct](https://metavision.khulnasoft.com/latest/code_of_conduct/). This document outlines the expected behavior for all participants in our project.
+Please read and adhere to our [Code of Conduct](https://superverse.khulnasoft.com/latest/code_of_conduct/). This document outlines the expected behavior for all participants in our project.
 
 ## Table of Contents
 
@@ -28,14 +28,14 @@ Please read and adhere to our [Code of Conduct](https://metavision.khulnasoft.co
 We welcome contributions to:
 
 1. Add a new feature to the library (guidance below).
-2. Improve our documentation and add examples to make it clear how to leverage the metavision library.
+2. Improve our documentation and add examples to make it clear how to leverage the superverse library.
 3. Report bugs and issues in the project.
 4. Submit a request for a new feature.
 5. Improve our test coverage.
 
 ### Contributing Features ✨
 
-Metavision is designed to provide generic utilities to solve problems. Thus, we focus on contributions that can have an impact on a wide range of projects.
+Superverse is designed to provide generic utilities to solve problems. Thus, we focus on contributions that can have an impact on a wide range of projects.
 
 For example, counting objects that cross a line anywhere on an image is a common problem in computer vision, but counting objects that cross a line 75% of the way through is less useful.
 
@@ -43,7 +43,7 @@ Before you contribute a new feature, consider submitting an Issue to discuss the
 
 ## How to Contribute Changes
 
-First, fork this repository to your own GitHub account. Click "fork" in the top corner of the `metavision` repository to get started:
+First, fork this repository to your own GitHub account. Click "fork" in the top corner of the `superverse` repository to get started:
 
 ![Forking the repository](https://media.khulnasoft.com/fork.png)
 
@@ -51,10 +51,10 @@ First, fork this repository to your own GitHub account. Click "fork" in the top 
 
 Then, run `git clone` to download the project code to your computer.
 
-You should also set up `khulnasoft/metavision` as an "upstream" remote (that is, tell git that the reference Metavision repository was the source of your fork of it):
+You should also set up `khulnasoft/superverse` as an "upstream" remote (that is, tell git that the reference Superverse repository was the source of your fork of it):
 
 ```bash
-git remote add upstream https://github.com/khulnasoft/metavision.git
+git remote add upstream https://github.com/khulnasoft/superverse.git
 git fetch upstream
 ```
 
@@ -96,7 +96,7 @@ Common types include:
 - test: Adding missing tests or correcting existing tests
 - chore: Changes to the build process or auxiliary tools and libraries
 
-Then, go back to your fork of the `metavision` repository, click "Pull Requests", and click "New Pull Request".
+Then, go back to your fork of the `superverse` repository, click "Pull Requests", and click "New Pull Request".
 
 ![Opening a pull request](https://media.khulnasoft.com/open_pr.png)
 
@@ -131,8 +131,8 @@ Before starting your work on the project, set up your development environment:
 1. Clone your fork of the project:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/metavision.git
-   cd metavision
+   git clone https://github.com/YOUR_USERNAME/superverse.git
+   cd superverse
    ```
 
    Replace `YOUR_USERNAME` with your GitHub username.
@@ -191,9 +191,9 @@ To run the pre-commit tool, follow these steps:
 
 ### Docstrings
 
-All new functions and classes in `metavision` should include docstrings. This is a prerequisite for any new functions and classes to be added to the library.
+All new functions and classes in `superverse` should include docstrings. This is a prerequisite for any new functions and classes to be added to the library.
 
-`metavision` adheres to the [Google Python docstring style](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods). Please refer to the style guide while writing docstrings for your contribution.
+`superverse` adheres to the [Google Python docstring style](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods). Please refer to the style guide while writing docstrings for your contribution.
 
 ### Type checking
 
@@ -201,7 +201,7 @@ So far, **there is no type checking with mypy**. See [issue](https://github.com/
 
 ## 📝 Documentation
 
-The `metavision` documentation is stored in a folder called `docs`. The project documentation is built using `mkdocs`.
+The `superverse` documentation is stored in a folder called `docs`. The project documentation is built using `mkdocs`.
 
 To run the documentation, install the project requirements with `poetry install --with dev`. Then, run `mkdocs serve` to start the documentation server.
 
@@ -209,14 +209,14 @@ You can learn more about mkdocs on the [mkdocs website](https://www.mkdocs.org/)
 
 ## 🧑‍🍳 Cookbooks
 
-We are always looking for new examples and cookbooks to add to the `metavision`
+We are always looking for new examples and cookbooks to add to the `superverse`
 documentation. If you have a use case that you think would be helpful to others, please
 submit a PR with your example. Here are some guidelines for submitting a new example:
 
-- Create a new notebook in the [`docs/notebooks`](https://github.com/khulnasoft/metavision/tree/develop/docs/notebooks) folder.
-- Add a link to the new notebook in [`docs/theme/cookbooks.html`](https://github.com/khulnasoft/metavision/blob/develop/docs/theme/cookbooks.html). Make sure to add the path to the new notebook, as well as a title, labels, author and metavision version.
-- Use the [Count Objects Crossing the Line](https://metavision.khulnasoft.com/develop/notebooks/count-objects-crossing-the-line/) example as a template for your new example.
-- Freeze the version of `metavision` you are using.
+- Create a new notebook in the [`docs/notebooks`](https://github.com/khulnasoft/superverse/tree/develop/docs/notebooks) folder.
+- Add a link to the new notebook in [`docs/theme/cookbooks.html`](https://github.com/khulnasoft/superverse/blob/develop/docs/theme/cookbooks.html). Make sure to add the path to the new notebook, as well as a title, labels, author and superverse version.
+- Use the [Count Objects Crossing the Line](https://superverse.khulnasoft.com/develop/notebooks/count-objects-crossing-the-line/) example as a template for your new example.
+- Freeze the version of `superverse` you are using.
 - Place an appropriate Open in Colab button at the top of the notebook. You can find an example of such a button in the aforementioned `Count Objects Crossing the Line` cookbook.
 - Notebook should be self-contained. If you rely on external data ( videos, images, etc.) or libraries, include download and installation commands in the notebook.
 - Annotate the code with appropriate comments, including links to the documentation describing each of the tools you have used.
@@ -227,4 +227,4 @@ submit a PR with your example. Here are some guidelines for submitting a new exa
 
 ## 📄 License
 
-By contributing, you agree that your contributions will be licensed under an [MIT license](https://github.com/khulnasoft/metavision/blob/develop/LICENSE.md).
+By contributing, you agree that your contributions will be licensed under an [MIT license](https://github.com/khulnasoft/superverse/blob/develop/LICENSE.md).

@@ -3,8 +3,8 @@ from typing import List, Optional, Tuple
 
 import pytest
 
-from metavision import LineZone
-from metavision.geometry.core import Point, Position, Vector
+from superverse import LineZone
+from superverse.geometry.core import Point, Position, Vector
 from test.test_utils import mock_detections
 
 

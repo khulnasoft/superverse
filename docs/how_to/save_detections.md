@@ -4,13 +4,13 @@ comments: true
 
 # Save Detections
 
-Metavision enables an easy way to save detections in .CSV and .JSON files for offline
+Superverse enables an easy way to save detections in .CSV and .JSON files for offline
 processing. This guide demonstrates how to perform video inference using the
 [Inference](https://github.com/khulnasoft/inference),
 [Ultralytics](https://github.com/ultralytics/ultralytics) or
 [Transformers](https://github.com/huggingface/transformers) packages and save their results with
-[`sv.CSVSink`](/latest/detection/tools/save_detections/#metavision.detection.tools.csv_sink.CSVSink) and
-[`sv.JSONSink`](/latest/detection/tools/save_detections/#metavision.detection.tools.csv_sink.JSONSink).
+[`sv.CSVSink`](/latest/detection/tools/save_detections/#superverse.detection.tools.csv_sink.CSVSink) and
+[`sv.JSONSink`](/latest/detection/tools/save_detections/#superverse.detection.tools.csv_sink.JSONSink).
 
 ## Run Detection
 
@@ -21,7 +21,7 @@ model. You can learn more on this topic in our
 === "Inference"
 
 ````python
-import metavision as sv
+import superverse as sv
 from inference import get_model
 
     model = get_model(model_id="yolov8n-640")
@@ -35,7 +35,7 @@ from inference import get_model
 
 === "Ultralytics"
 ```python
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
     model = YOLO("yolov8n.pt")
@@ -50,7 +50,7 @@ from ultralytics import YOLO
 === "Transformers"
 ```python
 import torch
-import metavision as sv
+import superverse as sv
 from transformers import DetrImageProcessor, DetrForObjectDetection
 
     processor = DetrImageProcessor.from_pretrained("facebook/detr-resnet-50")
@@ -75,14 +75,14 @@ from transformers import DetrImageProcessor, DetrForObjectDetection
 ## Save Detections as CSV
 
 To save detections to a `.CSV` file, open our
-[`sv.CSVSink`](/latest/detection/tools/save_detections/#metavision.detection.tools.csv_sink.CSVSink)
+[`sv.CSVSink`](/latest/detection/tools/save_detections/#superverse.detection.tools.csv_sink.CSVSink)
 and then pass the
-[`sv.Detections`](/latest/detection/core/#metavision.detection.core.Detections)
+[`sv.Detections`](/latest/detection/core/#superverse.detection.core.Detections)
 object resulting from the inference to it. Its fields are parsed and saved on disk.
 
 === "Inference"
 ```{ .py hl_lines="7 12" }
-import metavision as sv
+import superverse as sv
 from inference import get_model
 
     model = get_model(model_id="yolov8n-640")
@@ -98,7 +98,7 @@ from inference import get_model
 
 === "Ultralytics"
 ```{ .py hl_lines="7 12" }
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
     model = YOLO("yolov8n.pt")
@@ -115,7 +115,7 @@ from ultralytics import YOLO
 === "Transformers"
 ```{ .py hl_lines="9 23" }
 import torch
-import metavision as sv
+import superverse as sv
 from transformers import DetrImageProcessor, DetrForObjectDetection
 
     processor = DetrImageProcessor.from_pretrained("facebook/detr-resnet-50")
@@ -148,15 +148,15 @@ from transformers import DetrImageProcessor, DetrForObjectDetection
 ## Custom Fields
 
 Besides regular fields in
-[`sv.Detections`](/latest/detection/core/#metavision.detection.core.Detections),
-[`sv.CSVSink`](/latest/detection/tools/save_detections/#metavision.detection.tools.csv_sink.CSVSink)
+[`sv.Detections`](/latest/detection/core/#superverse.detection.core.Detections),
+[`sv.CSVSink`](/latest/detection/tools/save_detections/#superverse.detection.tools.csv_sink.CSVSink)
 also allows you to add custom information to each row, which can be passed via the
 `custom_data` dictionary. Let's utilize this feature to save information about the
 frame index from which the detections originate.
 
 === "Inference"
 ```{ .py hl_lines="8 12" }
-import metavision as sv
+import superverse as sv
 from inference import get_model
 
     model = get_model(model_id="yolov8n-640")
@@ -172,7 +172,7 @@ from inference import get_model
 
 === "Ultralytics"
 ```{ .py hl_lines="8 12" }
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
     model = YOLO("yolov8n.pt")
@@ -189,7 +189,7 @@ from ultralytics import YOLO
 === "Transformers"
 ```{ .py hl_lines="10 23" }
 import torch
-import metavision as sv
+import superverse as sv
 from transformers import DetrImageProcessor, DetrForObjectDetection
 
     processor = DetrImageProcessor.from_pretrained("facebook/detr-resnet-50")
@@ -223,13 +223,13 @@ from transformers import DetrImageProcessor, DetrForObjectDetection
 
 If you prefer to save the result in a `.JSON` file instead of a `.CSV` file, all you
 need to do is replace
-[`sv.CSVSink`](/latest/detection/tools/save_detections/#metavision.detection.tools.csv_sink.CSVSink)
+[`sv.CSVSink`](/latest/detection/tools/save_detections/#superverse.detection.tools.csv_sink.CSVSink)
 with
-[`sv.JSONSink`](/latest/detection/tools/save_detections/#metavision.detection.tools.csv_sink.JSONSink).
+[`sv.JSONSink`](/latest/detection/tools/save_detections/#superverse.detection.tools.csv_sink.JSONSink).
 
 === "Inference"
 ```{ .py hl_lines="7" }
-import metavision as sv
+import superverse as sv
 from inference import get_model
 
     model = get_model(model_id="yolov8n-640")
@@ -245,7 +245,7 @@ from inference import get_model
 
 === "Ultralytics"
 ```{ .py hl_lines="7" }
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
     model = YOLO("yolov8n.pt")
@@ -262,7 +262,7 @@ from ultralytics import YOLO
 === "Transformers"
 ```{ .py hl_lines="9" }
 import torch
-import metavision as sv
+import superverse as sv
 from transformers import DetrImageProcessor, DetrForObjectDetection
 
     processor = DetrImageProcessor.from_pretrained("facebook/detr-resnet-50")

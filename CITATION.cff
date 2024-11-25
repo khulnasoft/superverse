@@ -2,7 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Metavision
+title: Superverse
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
@@ -10,10 +10,10 @@ type: software
 authors:
   - given-names: Khulnasoft
     email: support@khulnasoft.com
-repository-code: "https://github.com/khulnasoft/metavision"
-url: "https://khulnasoft.github.io/metavision/"
+repository-code: "https://github.com/khulnasoft/superverse"
+url: "https://khulnasoft.github.io/superverse/"
 abstract: >-
-  metavision features a range of utilities for use in
+  superverse features a range of utilities for use in
   computer vision projects, from detections processing and
   filtering to confusion matrix calculation.
 keywords:

@@ -4,7 +4,7 @@ from typing import Optional, Tuple
 import numpy as np
 import pytest
 
-from metavision.detection.lmm import from_florence_2
+from superverse.detection.lmm import from_florence_2
 
 
 @pytest.mark.parametrize(

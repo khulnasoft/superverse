@@ -4,17 +4,17 @@ comments: true
 
 # Assets
 
-Metavision offers an assets download utility that allows you to download video files
+Superverse offers an assets download utility that allows you to download video files
 that you can use in your demos.
 
 <div class="md-typeset">
-    <h2><a href="#metavision.assets.downloader.download_assets.download_assets">download_assets</a></h2>
+    <h2><a href="#superverse.assets.downloader.download_assets.download_assets">download_assets</a></h2>
 </div>
 
-:::metavision.assets.downloader.download_assets
+:::superverse.assets.downloader.download_assets
 
 <div class="md-typeset">
-    <h2><a href="#metavision.assets.downloader.download_assets.VideoAssets">VideoAssets</a></h2>
+    <h2><a href="#superverse.assets.downloader.download_assets.VideoAssets">VideoAssets</a></h2>
 </div>
 
-:::metavision.assets.list.VideoAssets
+:::superverse.assets.list.VideoAssets

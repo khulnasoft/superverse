@@ -7,13 +7,13 @@
 
 This example performs speed estimation analysis using various object-detection models
 and ByteTrack - a simple yet effective online multi-object tracking method. It uses the
-metavision package for multiple tasks such as tracking, annotations, etc.
+superverse package for multiple tasks such as tracking, annotations, etc.
 
-https://github.com/khulnasoft/metavision/assets/26109316/d50118c1-2ae4-458d-915a-5d860fd36f71
+https://github.com/khulnasoft/superverse/assets/26109316/d50118c1-2ae4-458d-915a-5d860fd36f71
 
 > \[!IMPORTANT\]
-> Adjust the [`SOURCE`](https://github.com/khulnasoft/metavision/blob/e32b05a636dab2ea1f39299e529c4b22b8baa8da/examples/speed_estimation/ultralytics_example.py#L10)
-> and [`TARGET`](https://github.com/khulnasoft/metavision/blob/e32b05a636dab2ea1f39299e529c4b22b8baa8da/examples/speed_estimation/ultralytics_example.py#L15)
+> Adjust the [`SOURCE`](https://github.com/khulnasoft/superverse/blob/e32b05a636dab2ea1f39299e529c4b22b8baa8da/examples/speed_estimation/ultralytics_example.py#L10)
+> and [`TARGET`](https://github.com/khulnasoft/superverse/blob/e32b05a636dab2ea1f39299e529c4b22b8baa8da/examples/speed_estimation/ultralytics_example.py#L15)
 > configuration if you plan to run a speed estimation script on your video file. Those must be adjusted separately for each camera view. You can learn more
 > from our YouTube [tutorial](https://youtu.be/uWP6UjDeZvY).
 
@@ -22,8 +22,8 @@ https://github.com/khulnasoft/metavision/assets/26109316/d50118c1-2ae4-458d-915a
 - clone repository and navigate to example directory
 
   ```bash
-  git clone https://github.com/khulnasoft/metavision.git
-  cd metavision/examples/speed_estimation
+  git clone https://github.com/khulnasoft/superverse.git
+  cd superverse/examples/speed_estimation
   ```
 
 - setup python environment and activate it \[optional\]
@@ -115,8 +115,8 @@ This demo integrates two main components, each with its own licensing:
   under the [AGPL-3.0 license](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
   You can find more details about this license here.
 
-- metavision: The analytics code that powers the zone-based analysis in this demo is
-  based on the Metavision library, which is licensed under the
-  [MIT license](https://github.com/khulnasoft/metavision/blob/develop/LICENSE.md). This
-  makes the Metavision part of the code fully open source and freely usable in your
+- superverse: The analytics code that powers the zone-based analysis in this demo is
+  based on the Superverse library, which is licensed under the
+  [MIT license](https://github.com/khulnasoft/superverse/blob/develop/LICENSE.md). This
+  makes the Superverse part of the code fully open source and freely usable in your
   projects.

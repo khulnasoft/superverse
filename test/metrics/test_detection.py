@@ -4,8 +4,8 @@ from typing import Optional, Union
 import numpy as np
 import pytest
 
-from metavision.detection.core import Detections
-from metavision.metrics.detection import (
+from superverse.detection.core import Detections
+from superverse.metrics.detection import (
     ConfusionMatrix,
     MeanAveragePrecision,
     detections_to_tensor,

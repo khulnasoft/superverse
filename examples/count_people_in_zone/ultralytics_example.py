@@ -7,7 +7,7 @@ import numpy as np
 from tqdm import tqdm
 from ultralytics import YOLO
 
-import metavision as sv
+import superverse as sv
 
 COLORS = sv.ColorPalette.DEFAULT
 
@@ -126,7 +126,7 @@ def annotate(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Counting people in zones with YOLO and Metavision"
+        description="Counting people in zones with YOLO and Superverse"
     )
 
     parser.add_argument(

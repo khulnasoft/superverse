@@ -8,10 +8,10 @@ This guide shows how to detect small objects
 with the [Inference](https://github.com/khulnasoft/inference),
 [Ultralytics](https://github.com/ultralytics/ultralytics) or
 [Transformers](https://github.com/huggingface/transformers) packages using
-[`InferenceSlicer`](/latest/detection/tools/inference_slicer/#metavision.detection.tools.inference_slicer.InferenceSlicer).
+[`InferenceSlicer`](/latest/detection/tools/inference_slicer/#superverse.detection.tools.inference_slicer.InferenceSlicer).
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision_detect_small_objects_example.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse_detect_small_objects_example.mp4" type="video/mp4">
 </video>
 
 ## Baseline Detection
@@ -23,7 +23,7 @@ size relative to the image resolution.
 
 ````python
 import cv2
-import metavision as sv
+import superverse as sv
 from inference import get_model
 
     model = get_model(model_id="yolov8x-640")
@@ -43,7 +43,7 @@ from inference import get_model
 === "Ultralytics"
 ```python
 import cv2
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
     model = YOLO("yolov8x.pt")
@@ -63,7 +63,7 @@ from ultralytics import YOLO
 === "Transformers"
 ```python
 import torch
-import metavision as sv
+import superverse as sv
 from PIL import Image
 from transformers import DetrImageProcessor, DetrForSegmentation
 
@@ -97,7 +97,7 @@ from transformers import DetrImageProcessor, DetrForSegmentation
         scene=annotated_image, detections=detections, labels=labels)
     ```
 
-![basic-detection](https://media.khulnasoft.com/metavision_detect_small_objects_example_1.png)
+![basic-detection](https://media.khulnasoft.com/superverse_detect_small_objects_example_1.png)
 
 ## Input Resolution
 
@@ -108,7 +108,7 @@ is less effective for ultra-high-resolution images (4K and above).
 === "Inference"
 ```{ .py hl_lines="5" }
 import cv2
-import metavision as sv
+import superverse as sv
 from inference import get_model
 
     model = get_model(model_id="yolov8x-1280")
@@ -128,7 +128,7 @@ from inference import get_model
 === "Ultralytics"
 ```{ .py hl_lines="7" }
 import cv2
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
     model = YOLO("yolov8x.pt")
@@ -145,23 +145,23 @@ from ultralytics import YOLO
         scene=annotated_image, detections=detections)
     ```
 
-![detection-with-high-input-resolution](https://media.khulnasoft.com/metavision_detect_small_objects_example_2.png)
+![detection-with-high-input-resolution](https://media.khulnasoft.com/superverse_detect_small_objects_example_2.png)
 
 ## Inference Slicer
 
-[`InferenceSlicer`](/latest/detection/tools/inference_slicer/#metavision.detection.tools.inference_slicer.InferenceSlicer)
+[`InferenceSlicer`](/latest/detection/tools/inference_slicer/#superverse.detection.tools.inference_slicer.InferenceSlicer)
 processes high-resolution images by dividing them into smaller segments, detecting
 objects within each, and aggregating the results.
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision_detect_small_objects_example_2.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse_detect_small_objects_example_2.mp4" type="video/mp4">
 </video>
 
 === "Inference"
 ```{ .py hl_lines="9-14" }
 import cv2
 import numpy as np
-import metavision as sv
+import superverse as sv
 from inference import get_model
 
     model = get_model(model_id="yolov8x-640")
@@ -187,7 +187,7 @@ from inference import get_model
 ```{ .py hl_lines="9-14" }
 import cv2
 import numpy as np
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
     model = YOLO("yolov8x.pt")
@@ -214,7 +214,7 @@ from ultralytics import YOLO
 import cv2
 import torch
 import numpy as np
-import metavision as sv
+import superverse as sv
 from PIL import Image
 from transformers import DetrImageProcessor, DetrForObjectDetection
 
@@ -255,17 +255,17 @@ from transformers import DetrImageProcessor, DetrForObjectDetection
         scene=annotated_image, detections=detections, labels=labels)
     ```
 
-![detection-with-inference-slicer](https://media.khulnasoft.com/metavision_detect_small_objects_example_3.png)
+![detection-with-inference-slicer](https://media.khulnasoft.com/superverse_detect_small_objects_example_3.png)
 
 ## Small Object Segmentation
 
-[`InferenceSlicer`](/latest/detection/tools/inference_slicer/#metavision.detection.tools.inference_slicer.InferenceSlicer) can perform segmentation tasks too.
+[`InferenceSlicer`](/latest/detection/tools/inference_slicer/#superverse.detection.tools.inference_slicer.InferenceSlicer) can perform segmentation tasks too.
 
 === "Inference"
 ```{ .py hl_lines="6 16 19-20" }
 import cv2
 import numpy as np
-import metavision as sv
+import superverse as sv
 from inference import get_model
 
     model = get_model(model_id="yolov8x-seg-640")
@@ -291,7 +291,7 @@ from inference import get_model
 ```{ .py hl_lines="6 16 19-20" }
 import cv2
 import numpy as np
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
     model = YOLO("yolov8x-seg.pt")
@@ -313,5 +313,5 @@ from ultralytics import YOLO
         scene=annotated_image, detections=detections)
     ```
 
-![detection-with-inference-slicer](https://media.khulnasoft.com/metavision-docs/inference-slicer-segmentation-example.png)
+![detection-with-inference-slicer](https://media.khulnasoft.com/superverse-docs/inference-slicer-segmentation-example.png)
 ````

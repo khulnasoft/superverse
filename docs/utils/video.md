@@ -5,31 +5,31 @@ comments: true
 # Video Utils
 
 <div class="md-typeset">
-    <h2><a href="#metavision.utils.video.VideoInfo">VideoInfo</a></h2>
+    <h2><a href="#superverse.utils.video.VideoInfo">VideoInfo</a></h2>
 </div>
 
-:::metavision.utils.video.VideoInfo
+:::superverse.utils.video.VideoInfo
 
 <div class="md-typeset">
-    <h2><a href="#metavision.utils.video.VideoSink">VideoSink</a></h2>
+    <h2><a href="#superverse.utils.video.VideoSink">VideoSink</a></h2>
 </div>
 
-:::metavision.utils.video.VideoSink
+:::superverse.utils.video.VideoSink
 
 <div class="md-typeset">
-    <h2><a href="#metavision.utils.video.FPSMonitor">FPSMonitor</a></h2>
+    <h2><a href="#superverse.utils.video.FPSMonitor">FPSMonitor</a></h2>
 </div>
 
-:::metavision.utils.video.FPSMonitor
+:::superverse.utils.video.FPSMonitor
 
 <div class="md-typeset">
-    <h2><a href="#metavision.utils.video.get_video_frames_generator">get_video_frames_generator</a></h2>
+    <h2><a href="#superverse.utils.video.get_video_frames_generator">get_video_frames_generator</a></h2>
 </div>
 
-:::metavision.utils.video.get_video_frames_generator
+:::superverse.utils.video.get_video_frames_generator
 
 <div class="md-typeset">
-    <h2><a href="#metavision.utils.video.process_video">process_video</a></h2>
+    <h2><a href="#superverse.utils.video.process_video">process_video</a></h2>
 </div>
 
-:::metavision.utils.video.process_video
+:::superverse.utils.video.process_video

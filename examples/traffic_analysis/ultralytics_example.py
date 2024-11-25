@@ -6,7 +6,7 @@ import numpy as np
 from tqdm import tqdm
 from ultralytics import YOLO
 
-import metavision as sv
+import superverse as sv
 
 COLORS = sv.ColorPalette.from_hex(["#E6194B", "#3CB44B", "#FFE119", "#3C76D1"])
 

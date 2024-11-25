@@ -4,12 +4,12 @@
 
 <br>
 
-[![version](https://badge.fury.io/py/metavision.svg)](https://badge.fury.io/py/metavision)
-[![downloads](https://img.shields.io/pypi/dm/metavision)](https://pypistats.org/packages/metavision)
-[![snyk](https://snyk.io/advisor/python/metavision/badge.svg)](https://snyk.io/advisor/python/metavision)
-[![license](https://img.shields.io/pypi/l/metavision)](https://github.com/khulnasoft/metavision/blob/main/LICENSE.md)
-[![python-version](https://img.shields.io/pypi/pyversions/metavision)](https://badge.fury.io/py/metavision)
-[![colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/khulnasoft/metavision/blob/main/demo.ipynb)
+[![version](https://badge.fury.io/py/superverse.svg)](https://badge.fury.io/py/superverse)
+[![downloads](https://img.shields.io/pypi/dm/superverse)](https://pypistats.org/packages/superverse)
+[![snyk](https://snyk.io/advisor/python/superverse/badge.svg)](https://snyk.io/advisor/python/superverse)
+[![license](https://img.shields.io/pypi/l/superverse)](https://github.com/khulnasoft/superverse/blob/main/LICENSE.md)
+[![python-version](https://img.shields.io/pypi/pyversions/superverse)](https://badge.fury.io/py/superverse)
+[![colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/khulnasoft/superverse/blob/main/demo.ipynb)
 [![gradio](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Khulnasoft/Annotators)
 [![discord](https://img.shields.io/discord/1159501506232451173?logo=discord&label=discord&labelColor=fff&color=5865f2&link=https%3A%2F%2Fdiscord.gg%2FGbfgXGJ8Bk)](https://discord.gg/GbfgXGJ8Bk)
 [![built-with-material-for-mkdocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
@@ -22,24 +22,24 @@
 
 ## 💻 install
 
-Pip install the metavision package in a
+Pip install the superverse package in a
 [**Python>=3.8**](https://www.python.org/) environment.
 
 ```bash
-pip install metavision
+pip install superverse
 ```
 
-Read more about conda, mamba, and installing from source in our [guide](https://khulnasoft.github.io/metavision/).
+Read more about conda, mamba, and installing from source in our [guide](https://khulnasoft.github.io/superverse/).
 
 ## 🔥 quickstart
 
 ### models
 
-Metavision was designed to be model agnostic. Just plug in any classification, detection, or segmentation model. For your convenience, we have created [connectors](https://metavision.khulnasoft.com/latest/detection/core/#detections) for the most popular libraries like Ultralytics, Transformers, or MMDetection.
+Superverse was designed to be model agnostic. Just plug in any classification, detection, or segmentation model. For your convenience, we have created [connectors](https://superverse.khulnasoft.com/latest/detection/core/#detections) for the most popular libraries like Ultralytics, Transformers, or MMDetection.
 
 ```python
 import cv2
-import metavision as sv
+import superverse as sv
 from ultralytics import YOLO
 
 image = cv2.imread(...)
@@ -58,7 +58,7 @@ len(detections)
 
   ```python
   import cv2
-  import metavision as sv
+  import superverse as sv
   from inference import get_model
 
   image = cv2.imread(...)
@@ -76,7 +76,7 @@ len(detections)
 
 ```python
 import cv2
-import metavision as sv
+import superverse as sv
 
 image = cv2.imread(...)
 detections = sv.Detections(...)
@@ -90,7 +90,7 @@ annotated_frame = box_annotator.annotate(
 ### datasets
 
 ```python
-import metavision as sv
+import superverse as sv
 from khulnasoft import Khulnasoft
 
 project = Khulnasoft().workspace(<WORKSPACE_ID>).project(<PROJECT_ID>)
@@ -202,14 +202,14 @@ for path, image, annotation in ds:
 
 ## 📚 documentation
 
-Visit our [documentation](https://khulnasoft.github.io/metavision) page to learn how metavision can help you build computer vision applications faster and more reliably.
+Visit our [documentation](https://khulnasoft.github.io/superverse) page to learn how superverse can help you build computer vision applications faster and more reliably.
 
 ## 🏆 contribution
 
-We love your input! Please see our [contributing guide](https://github.com/khulnasoft/metavision/blob/main/CONTRIBUTING.md) to get started. Thank you 🙏 to all our contributors!
+We love your input! Please see our [contributing guide](https://github.com/khulnasoft/superverse/blob/main/CONTRIBUTING.md) to get started. Thank you 🙏 to all our contributors!
 
 <p align="center">
-    <a href="https://github.com/khulnasoft/metavision/graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=khulnasoft/metavision" />
+    <a href="https://github.com/khulnasoft/superverse/graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=khulnasoft/superverse" />
     </a>
 </p>

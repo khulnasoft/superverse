@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image, ImageChops
 
-from metavision.utils.conversion import (
+from superverse.utils.conversion import (
     cv2_to_pillow,
     ensure_cv2_image_for_processing,
     images_to_cv2,

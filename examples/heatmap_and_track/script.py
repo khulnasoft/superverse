@@ -3,8 +3,8 @@ import argparse
 import cv2
 from ultralytics import YOLO
 
-import metavision as sv
-from metavision.assets import VideoAssets, download_assets
+import superverse as sv
+from superverse.assets import VideoAssets, download_assets
 
 
 def download_video() -> str:
@@ -102,7 +102,7 @@ def heatmap_and_track(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Heatmap and Tracking with Metavision"
+        description="Heatmap and Tracking with Superverse"
     )
     parser.add_argument(
         "--source_weights_path",

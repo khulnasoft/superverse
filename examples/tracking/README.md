@@ -3,15 +3,15 @@
 ## 👋 hello
 
 This script provides functionality for processing videos using YOLOv8 for object
-detection and Metavision for tracking and annotation.
+detection and Superverse for tracking and annotation.
 
 ## 💻 install
 
 - clone repository and navigate to example directory
 
   ```bash
-  git clone https://github.com/khulnasoft/metavision.git
-  cd metavision/examples/tracking
+  git clone https://github.com/khulnasoft/superverse.git
+  cd superverse/examples/tracking
   ```
 
 - setup python environment and activate it \[optional\]
@@ -101,8 +101,8 @@ This demo integrates two main components, each with its own licensing:
   under the [AGPL-3.0 license](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
   You can find more details about this license here.
 
-- metavision: The analytics code that powers the zone-based analysis in this demo is
-  based on the Metavision library, which is licensed under the
-  [MIT license](https://github.com/khulnasoft/metavision/blob/develop/LICENSE.md). This
-  makes the Metavision part of the code fully open source and freely usable in your
+- superverse: The analytics code that powers the zone-based analysis in this demo is
+  based on the Superverse library, which is licensed under the
+  [MIT license](https://github.com/khulnasoft/superverse/blob/develop/LICENSE.md). This
+  makes the Superverse part of the code fully open source and freely usable in your
   projects.

@@ -4,7 +4,7 @@ from typing import Optional, Tuple
 import numpy as np
 import pytest
 
-from metavision.classification.core import Classifications
+from superverse.classification.core import Classifications
 
 
 @pytest.mark.parametrize(

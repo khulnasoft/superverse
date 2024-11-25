@@ -8,7 +8,7 @@ status: new
 === "VertexAnnotator"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     key_points = sv.KeyPoints(...)
@@ -25,14 +25,14 @@ status: new
 
     <div class="result" markdown>
 
-    ![vertex-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/vertex-annotator-example.png){ align=center width="800" }
+    ![vertex-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/vertex-annotator-example.png){ align=center width="800" }
 
     </div>
 
 === "EdgeAnnotator"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     key_points = sv.KeyPoints(...)
@@ -49,14 +49,14 @@ status: new
 
     <div class="result" markdown>
 
-    ![edge-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/edge-annotator-example.png){ align=center width="800" }
+    ![edge-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/edge-annotator-example.png){ align=center width="800" }
 
     </div>
 
 === "VertexLabelAnnotator"
 
     ```python
-    import metavision as sv
+    import superverse as sv
 
     image = ...
     key_points = sv.KeyPoints(...)
@@ -74,24 +74,24 @@ status: new
 
     <div class="result" markdown>
 
-    ![vertex-label-annotator-example](https://media.khulnasoft.com/metavision-annotator-examples/vertex-label-annotator-example.png){ align=center width="800" }
+    ![vertex-label-annotator-example](https://media.khulnasoft.com/superverse-annotator-examples/vertex-label-annotator-example.png){ align=center width="800" }
 
     </div>
 
 <div class="md-typeset">
-  <h2><a href="#metavision.keypoint.annotators.VertexAnnotator">VertexAnnotator</a></h2>
+  <h2><a href="#superverse.keypoint.annotators.VertexAnnotator">VertexAnnotator</a></h2>
 </div>
 
-:::metavision.keypoint.annotators.VertexAnnotator
+:::superverse.keypoint.annotators.VertexAnnotator
 
 <div class="md-typeset">
-  <h2><a href="#metavision.keypoint.annotators.EdgeAnnotator">EdgeAnnotator</a></h2>
+  <h2><a href="#superverse.keypoint.annotators.EdgeAnnotator">EdgeAnnotator</a></h2>
 </div>
 
-:::metavision.keypoint.annotators.EdgeAnnotator
+:::superverse.keypoint.annotators.EdgeAnnotator
 
 <div class="md-typeset">
-  <h2><a href="#metavision.keypoint.annotators.VertexLabelAnnotator">VertexLabelAnnotator</a></h2>
+  <h2><a href="#superverse.keypoint.annotators.VertexLabelAnnotator">VertexLabelAnnotator</a></h2>
 </div>
 
-:::metavision.keypoint.annotators.VertexLabelAnnotator
+:::superverse.keypoint.annotators.VertexLabelAnnotator

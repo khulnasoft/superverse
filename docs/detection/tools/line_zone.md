@@ -7,16 +7,16 @@ status: new
   <h2>LineZone</h2>
 </div>
 
-:::metavision.detection.line_zone.LineZone
+:::superverse.detection.line_zone.LineZone
 
 <div class="md-typeset">
   <h2>LineZoneAnnotator</h2>
 </div>
 
-:::metavision.detection.line_zone.LineZoneAnnotator
+:::superverse.detection.line_zone.LineZoneAnnotator
 
 <div class="md-typeset">
   <h2>LineZoneAnnotatorMulticlass</h2>
 </div>
 
-:::metavision.detection.line_zone.LineZoneAnnotatorMulticlass
+:::superverse.detection.line_zone.LineZoneAnnotatorMulticlass

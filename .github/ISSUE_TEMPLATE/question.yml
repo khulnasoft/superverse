@@ -1,21 +1,21 @@
 name: ❓ Question
-description: Ask a Metavision question
+description: Ask a Superverse question
 # title: " "
 labels: [question]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for asking a Metavision ❓ Question!
+        Thank you for asking a Superverse ❓ Question!
 
   - type: checkboxes
     attributes:
       label: Search before asking
       description: >
-        Please search the [issues](https://github.com/khulnasoft/metavision/issues) to see if a similar feature request already exists.
+        Please search the [issues](https://github.com/khulnasoft/superverse/issues) to see if a similar feature request already exists.
       options:
         - label: >
-            I have searched the Metavision [issues](https://github.com/khulnasoft/metavision/issues) and found no similar feature requests.
+            I have searched the Superverse [issues](https://github.com/khulnasoft/superverse/issues) and found no similar feature requests.
           required: true
 
   - type: textarea

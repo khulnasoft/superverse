@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ${authorsHTML}
             <div style="font-size: 12px; color: ${theme.color}; display: flex; flex: 0; justify-content: space-between">
                 <div style="display: flex; align-items: center;">
-                <img src="/assets/metavision-lenny.png" aria-label="stars" width="20" height="20" role="img" />
+                <img src="/assets/superverse-lenny.png" aria-label="stars" width="20" height="20" role="img" />
                 &nbsp;
                 <span style="margin-left: 4px">${version}</span>
                 </div>

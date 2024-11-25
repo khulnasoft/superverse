@@ -5,7 +5,7 @@ import numpy as np
 import pytest
 from defusedxml import ElementTree
 
-from metavision.dataset.formats.pascal_voc import (
+from superverse.dataset.formats.pascal_voc import (
     detections_from_xml_obj,
     object_to_pascal_voc,
     parse_polygon_points,

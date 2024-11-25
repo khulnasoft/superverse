@@ -4,4 +4,4 @@ comments: true
 
 # Classifications
 
-:::metavision.classification.core.Classifications
+:::superverse.classification.core.Classifications

@@ -4,7 +4,7 @@ import os
 from inference.models.utils import get_khulnasoft_model
 from tqdm import tqdm
 
-import metavision as sv
+import superverse as sv
 
 
 def process_video(

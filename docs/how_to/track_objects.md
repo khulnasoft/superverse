@@ -5,7 +5,7 @@ status: new
 
 # Track Objects
 
-Leverage Metavision's advanced capabilities for enhancing your video analysis by
+Leverage Superverse's advanced capabilities for enhancing your video analysis by
 seamlessly [tracking](/latest/trackers/) objects recognized by
 a multitude of object detection, segmentation and keypoint models. This comprehensive guide will
 take you through the steps to perform inference using the YOLOv8 model via either the
@@ -18,24 +18,24 @@ for a deeper analysis.
 
 To make it easier for you to follow our tutorial download the video we will use as an
 example. You can do this using
-[`metavision[assets]`](/latest/assets/) extension.
+[`superverse[assets]`](/latest/assets/) extension.
 
 ```python
-from metavision.assets import download_assets, VideoAssets
+from superverse.assets import download_assets, VideoAssets
 
 download_assets(VideoAssets.PEOPLE_WALKING)
 ```
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/people-walking.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/people-walking.mp4" type="video/mp4">
 </video>
 
 ### Run Inference
 
 First, you'll need to obtain predictions from your object detection or segmentation
 model. In this tutorial, we are using the YOLOv8 model as an example. However,
-Metavision is versatile and compatible with various models. Check this
-[link](/latest/how_to/detect_and_annotate/#load-predictions-into-metavision)
+Superverse is versatile and compatible with various models. Check this
+[link](/latest/how_to/detect_and_annotate/#load-predictions-into-superverse)
 for guidance on how to plug in other models.
 
 We will define a `callback` function, which will process each frame of the video
@@ -51,7 +51,7 @@ it will be modified to include tracking, labeling, and trace annotations.
 
     ```{ .py }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO("yolov8n.pt")
@@ -73,7 +73,7 @@ it will be modified to include tracking, labeling, and trace annotations.
 
     ```{ .py }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from inference.models.utils import get_khulnasoft_model
 
     model = get_khulnasoft_model(model_id="yolov8n-640", api_key=<KHULNASOFT API KEY>)
@@ -92,14 +92,14 @@ it will be modified to include tracking, labeling, and trace annotations.
     ```
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/how-to/track-objects/run-inference.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/how-to/track-objects/run-inference.mp4" type="video/mp4">
 </video>
 
 ### Tracking
 
 After running inference and obtaining predictions, the next step is to track the
-detected objects throughout the video. Utilizing Metavision’s
-[`sv.ByteTrack`](/latest/trackers/#metavision.tracker.byte_tracker.core.ByteTrack)
+detected objects throughout the video. Utilizing Superverse’s
+[`sv.ByteTrack`](/latest/trackers/#superverse.tracker.byte_tracker.core.ByteTrack)
 functionality, each detected object is assigned a unique tracker ID,
 enabling the continuous following of the object's motion path across different frames.
 
@@ -107,7 +107,7 @@ enabling the continuous following of the object's motion path across different f
 
     ```{ .py hl_lines="6 12" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO("yolov8n.pt")
@@ -131,7 +131,7 @@ enabling the continuous following of the object's motion path across different f
 
     ```{ .py hl_lines="6 12" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from inference.models.utils import get_khulnasoft_model
 
     model = get_khulnasoft_model(model_id="yolov8n-640", api_key=<KHULNASOFT API KEY>)
@@ -155,15 +155,15 @@ enabling the continuous following of the object's motion path across different f
 
 Annotating the video with tracking IDs helps in distinguishing and following each object
 distinctly. With the
-[`sv.LabelAnnotator`](/latest/detection/annotators/#metavision.annotators.core.LabelAnnotator)
-in Metavision, we can overlay the tracker IDs and class labels on the detected objects,
+[`sv.LabelAnnotator`](/latest/detection/annotators/#superverse.annotators.core.LabelAnnotator)
+in Superverse, we can overlay the tracker IDs and class labels on the detected objects,
 offering a clear visual representation of each object's class and unique identifier.
 
 === "Ultralytics"
 
     ```{ .py hl_lines="8 15-19 23-24" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO("yolov8n.pt")
@@ -198,7 +198,7 @@ offering a clear visual representation of each object's class and unique identif
 
     ```{ .py hl_lines="8 15-19 23-24" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from inference.models.utils import get_khulnasoft_model
 
     model = get_khulnasoft_model(model_id="yolov8n-640", api_key=<KHULNASOFT API KEY>)
@@ -230,14 +230,14 @@ offering a clear visual representation of each object's class and unique identif
     ```
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/how-to/track-objects/annotate-video-with-tracking-ids.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/how-to/track-objects/annotate-video-with-tracking-ids.mp4" type="video/mp4">
 </video>
 
 ### Annotate Video with Traces
 
 Adding traces to the video involves overlaying the historical paths of the detected
 objects. This feature, powered by the
-[`sv.TraceAnnotator`](/latest/detection/annotators/#metavision.annotators.core.TraceAnnotator),
+[`sv.TraceAnnotator`](/latest/detection/annotators/#superverse.annotators.core.TraceAnnotator),
 allows for visualizing the trajectories of objects, helping in understanding the
 movement patterns and interactions between objects in the video.
 
@@ -245,7 +245,7 @@ movement patterns and interactions between objects in the video.
 
     ```{ .py hl_lines="9 26-27" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO("yolov8n.pt")
@@ -283,7 +283,7 @@ movement patterns and interactions between objects in the video.
 
     ```{ .py hl_lines="9 26-27" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from inference.models.utils import get_khulnasoft_model
 
     model = get_khulnasoft_model(model_id="yolov8n-640", api_key=<KHULNASOFT API KEY>)
@@ -318,7 +318,7 @@ movement patterns and interactions between objects in the video.
     ```
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/how-to/track-objects/annotate-video-with-traces.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/how-to/track-objects/annotate-video-with-traces.mp4" type="video/mp4">
 </video>
 
 ## Keypoints
@@ -326,32 +326,32 @@ movement patterns and interactions between objects in the video.
 Models aren't limited to object detection and segmentation. Keypoint detection allows for detailed analysis of body joints and connections, especially valuable for applications like human pose estimation. This section introduces keypoint tracking. We'll walk through the steps of annotating keypoints, converting them into bounding box detections compatible with `ByteTrack`, and applying detection smoothing for enhanced stability.
 
 To make it easier for you to follow our tutorial, let's download the video we will use as an
-example. You can do this using [`metavision[assets]`](/latest/assets/) extension.
+example. You can do this using [`superverse[assets]`](/latest/assets/) extension.
 
 ```python
-from metavision.assets import download_assets, VideoAssets
+from superverse.assets import download_assets, VideoAssets
 
 download_assets(VideoAssets.SKIING)
 ```
 
 <video controls muted>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/how-to/track-objects/skiing-hd.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/how-to/track-objects/skiing-hd.mp4" type="video/mp4">
 </video>
 
 ### Keypoint Detection
 
 First, you'll need to obtain predictions from your keypoint detection model. In this tutorial, we are using the YOLOv8 model as an example. However,
-Metavision is versatile and compatible with various models. Check this [link](/latest/keypoint/core/) for guidance on how to plug in other models.
+Superverse is versatile and compatible with various models. Check this [link](/latest/keypoint/core/) for guidance on how to plug in other models.
 
 We will define a `callback` function, which will process each frame of the video by obtaining model predictions and then annotating the frame based on these predictions.
 
-Let's immediately visualize the results with our [`EdgeAnnotator`](/latest/keypoint/annotators/#metavision.keypoint.annotators.EdgeAnnotator) and [`VertexAnnotator`](https://metavision.khulnasoft.com/latest/keypoint/annotators/#metavision.keypoint.annotators.VertexAnnotator).
+Let's immediately visualize the results with our [`EdgeAnnotator`](/latest/keypoint/annotators/#superverse.keypoint.annotators.EdgeAnnotator) and [`VertexAnnotator`](https://superverse.khulnasoft.com/latest/keypoint/annotators/#superverse.keypoint.annotators.VertexAnnotator).
 
 === "Ultralytics"
 
     ```{ .py hl_lines="5 10-11" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO("yolov8m-pose.pt")
@@ -378,7 +378,7 @@ Let's immediately visualize the results with our [`EdgeAnnotator`](/latest/keypo
 
     ```{ .py hl_lines="5-6 11-12" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from inference.models.utils import get_khulnasoft_model
 
     model = get_khulnasoft_model(
@@ -403,14 +403,14 @@ Let's immediately visualize the results with our [`EdgeAnnotator`](/latest/keypo
     ```
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/how-to/track-objects/track-keypoints-only-keypoints.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/how-to/track-objects/track-keypoints-only-keypoints.mp4" type="video/mp4">
 </video>
 
 ### Convert to Detections
 
-Keypoint tracking is currently supported via the conversion of `KeyPoints` to `Detections`. This is achieved with the [`KeyPoints.as_detections()`](/latest/keypoint/core/#metavision.keypoint.core.KeyPoints.as_detections) function.
+Keypoint tracking is currently supported via the conversion of `KeyPoints` to `Detections`. This is achieved with the [`KeyPoints.as_detections()`](/latest/keypoint/core/#superverse.keypoint.core.KeyPoints.as_detections) function.
 
-Let's convert to detections and visualize the results with our [`BoxAnnotator`](/latest/detection/annotators/#metavision.annotators.core.BoxAnnotator).
+Let's convert to detections and visualize the results with our [`BoxAnnotator`](/latest/detection/annotators/#superverse.annotators.core.BoxAnnotator).
 
 !!! tip
 
@@ -420,7 +420,7 @@ Let's convert to detections and visualize the results with our [`BoxAnnotator`](
 
     ```{ .py hl_lines="8 13 19-20" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO("yolov8m-pose.pt")
@@ -451,7 +451,7 @@ Let's convert to detections and visualize the results with our [`BoxAnnotator`](
 
     ```{ .py hl_lines="9 14 20-21" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from inference.models.utils import get_khulnasoft_model
 
     model = get_khulnasoft_model(
@@ -480,18 +480,18 @@ Let's convert to detections and visualize the results with our [`BoxAnnotator`](
     ```
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/how-to/track-objects/track-keypoints-converted-to-detections.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/how-to/track-objects/track-keypoints-converted-to-detections.mp4" type="video/mp4">
 </video>
 
 ### Keypoint Tracking
 
-Now that we have a `Detections` object, we can track it throughout the video. Utilizing Metavision’s [`sv.ByteTrack`](/latest/trackers/#metavision.tracker.byte_tracker.core.ByteTrack) functionality, each detected object is assigned a unique tracker ID, enabling the continuous following of the object's motion path across different frames. We shall visualize the result with `TraceAnnotator`.
+Now that we have a `Detections` object, we can track it throughout the video. Utilizing Superverse’s [`sv.ByteTrack`](/latest/trackers/#superverse.tracker.byte_tracker.core.ByteTrack) functionality, each detected object is assigned a unique tracker ID, enabling the continuous following of the object's motion path across different frames. We shall visualize the result with `TraceAnnotator`.
 
 === "Ultralytics"
 
     ```{ .py hl_lines="10-11 17 25-26" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO("yolov8m-pose.pt")
@@ -528,7 +528,7 @@ Now that we have a `Detections` object, we can track it throughout the video. Ut
 
     ```{ .py hl_lines="11-12 18 26-27" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from inference.models.utils import get_khulnasoft_model
 
     model = get_khulnasoft_model(
@@ -563,7 +563,7 @@ Now that we have a `Detections` object, we can track it throughout the video. Ut
     ```
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/how-to/track-objects/track-keypoints-with-tracking.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/how-to/track-objects/track-keypoints-with-tracking.mp4" type="video/mp4">
 </video>
 
 ### Bonus: Smoothing
@@ -574,7 +574,7 @@ We could stop here as we have successfully tracked the object detected by the ke
 
     ```{ .py hl_lines="11 19" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from ultralytics import YOLO
 
     model = YOLO("yolov8m-pose.pt")
@@ -613,7 +613,7 @@ We could stop here as we have successfully tracked the object detected by the ke
 
     ```{ .py hl_lines="12 20" }
     import numpy as np
-    import metavision as sv
+    import superverse as sv
     from inference.models.utils import get_khulnasoft_model
 
     model = get_khulnasoft_model(
@@ -650,7 +650,7 @@ We could stop here as we have successfully tracked the object detected by the ke
     ```
 
 <video controls>
-    <source src="https://media.khulnasoft.com/metavision/video-examples/how-to/track-objects/track-keypoints-with-smoothing.mp4" type="video/mp4">
+    <source src="https://media.khulnasoft.com/superverse/video-examples/how-to/track-objects/track-keypoints-with-smoothing.mp4" type="video/mp4">
 </video>
 
-This structured walkthrough should give a detailed pathway to annotate videos effectively using Metavision’s various functionalities, including object tracking and trace annotations.
+This structured walkthrough should give a detailed pathway to annotate videos effectively using Superverse’s various functionalities, including object tracking and trace annotations.

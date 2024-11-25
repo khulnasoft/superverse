@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from metavision.geometry.core import Point
-from metavision.geometry.utils import get_polygon_center
+from superverse.geometry.core import Point
+from superverse.geometry.utils import get_polygon_center
 
 
 def generate_test_polygon(n: int) -> np.ndarray:
@@ -17,7 +17,7 @@ def generate_test_polygon(n: int) -> np.ndarray:
 
     Examples:
          ```python
-         from metavision.geometry.utils import get_polygon_center
+         from superverse.geometry.utils import get_polygon_center
          import numpy as np
 
          test_polygon = generate_test_data(1000)

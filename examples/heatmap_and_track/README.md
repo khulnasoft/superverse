@@ -4,15 +4,15 @@
 
 This script performs heatmap and tracking analysis using YOLOv8, an object-detection method and
 ByteTrack, a simple yet effective online multi-object tracking method. It uses the
-metavision package for multiple tasks such as drawing heatmap annotations, tracking objects, etc.
+superverse package for multiple tasks such as drawing heatmap annotations, tracking objects, etc.
 
 ## 💻 install
 
 - clone repository and navigate to example directory
 
   ```bash
-  git clone https://github.com/khulnasoft/metavision.git
-  cd metavision/examples/heatmap_and_track
+  git clone https://github.com/khulnasoft/superverse.git
+  cd superverse/examples/heatmap_and_track
   ```
 
 - setup python environment and activate it \[optional\]
@@ -34,7 +34,7 @@ metavision package for multiple tasks such as drawing heatmap annotations, track
   YOLO model. This file contains the trained model data necessary for object detection.
 - `--source_video_path` (optional): The path to the source video file that will be
   analyzed. This is the input video on which crowd analysis will be performed.
-  If not specified default is `people-walking.mp4` from metavision assets
+  If not specified default is `people-walking.mp4` from superverse assets
 - `--target_video_path` (optional): The path to save the output.mp4 video with annotations.
 - `--confidence_threshold` (optional): Sets the confidence threshold for the YOLO model
   to filter detections. Default is `0.3`. This determines how confident the model should
@@ -67,8 +67,8 @@ This demo integrates two main components, each with its own licensing:
   under the [AGPL-3.0 license](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
   You can find more details about this license here.
 
-- metavision: The analytics code that powers the zone-based analysis in this demo is
-  based on the Metavision library, which is licensed under the
-  [MIT license](https://github.com/khulnasoft/metavision/blob/develop/LICENSE.md). This
-  makes the Metavision part of the code fully open source and freely usable in your
+- superverse: The analytics code that powers the zone-based analysis in this demo is
+  based on the Superverse library, which is licensed under the
+  [MIT license](https://github.com/khulnasoft/superverse/blob/develop/LICENSE.md). This
+  makes the Superverse part of the code fully open source and freely usable in your
   projects.

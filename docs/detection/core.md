@@ -5,4 +5,4 @@ status: new
 
 # Detections
 
-:::metavision.detection.core.Detections
+:::superverse.detection.core.Detections

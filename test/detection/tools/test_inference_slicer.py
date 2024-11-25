@@ -4,9 +4,9 @@ from typing import Optional, Tuple
 import numpy as np
 import pytest
 
-from metavision.detection.core import Detections
-from metavision.detection.overlap_filter import OverlapFilter
-from metavision.detection.tools.inference_slicer import InferenceSlicer
+from superverse.detection.core import Detections
+from superverse.detection.overlap_filter import OverlapFilter
+from superverse.detection.tools.inference_slicer import InferenceSlicer
 
 
 @pytest.fixture
