@@ -3,3 +3,4 @@ superverse>=0.20.0
 ultralytics
 inference==0.9.17
 pytube
+pillow>=10.2.0 # not directly required, pinned by Snyk to avoid a vulnerability
