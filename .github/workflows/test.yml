@@ -5,7 +5,9 @@ on:
     branches: [main, develop]
 
 jobs:
-  build-dev-test:
+  pytest:
+    name: PyTest
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     strategy:
       matrix:
