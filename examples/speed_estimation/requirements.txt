@@ -4,3 +4,4 @@ requests
 ultralytics==8.0.237
 super-gradients==3.5.0
 inference==0.9.17
+pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
