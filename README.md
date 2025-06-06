@@ -1,4 +1,4 @@
-# MetaVision
+# SuperVerse
 
 [notebooks](https://github.com/khulnasoft/notebooks) | [inference](https://github.com/khulnasoft/inference) | [autodistill](https://github.com/autodistill/autodistill) | [maestro](https://github.com/khulnasoft/multimodal-maestro)
 
