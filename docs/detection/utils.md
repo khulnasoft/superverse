@@ -90,6 +90,11 @@ status: new
 :::superverse.detection.utils.xywh_to_xyxy
 
 <div class="md-typeset">
+  <h2><a href="#superverse.detection.utils.xyxy_to_xcycarh">xyxy_to_xcycarh</a></h2>
+</div>
+
+:::superverse.detection.utils.xyxy_to_xcycarh
+<div class="md-typeset">
   <h2><a href="#superverse.detection.utils.xcycwh_to_xyxy">xcycwh_to_xyxy</a></h2>
 </div>
 
